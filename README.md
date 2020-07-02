@@ -16,11 +16,46 @@ For more information, please also check out or [Developer Website](https://devel
 
 ## Reference Drivers
 
-TBD
+### Concept
 
-### Platform support
+Our reference drivers are our suggested starting point to implement stable products. They are tested intensively, and we provide support to our customers in case they face unexpected behaviour of the code. 
 
-TBD
+It is implemented in a platform independent way, by means of a small "Hardware Abstraction Layer" which abstracts the interface level commands (I2C, delay functions etc.) from the sensor readout protocols and timing. Because of that, the drivers can be ported to new platforms rather easily.
+
+We currently support a range of sample implementation. At the time of writing this document, the following platforms are supported:
+- Linux I2C userspace
+- MBED OS
+- Arduino Wire library (plus alternative I2C library)
+- Microchip SAMD2
+- Nordic nRF51
+
+
+### Repositories
+
+- SHT series: https://github.com/Sensirion/embedded-sht
+- STS series: https://github.com/Sensirion/embedded-sts
+- SCD series: https://github.com/Sensirion/embedded-scd
+- SPS series (I2C): https://github.com/Sensirion/embedded-sps
+- SPS series (UART): https://github.com/Sensirion/embedded-uart-sps
+- SFM series: https://github.com/Sensirion/embedded-sfm
+- SGP series: https://github.com/Sensirion/embedded-sgp
+
+- Shared code: https://github.com/Sensirion/embedded-common
+
+### Example use
+
+To build a driver, there's three steps that need to be completed:
+
+1. Download the a release zip file from Github
+2. Configure your platform, or build your own platform support file
+3. Compile example / integrate into your application
+
+As an example, for the SHTC1 humidity sensor for Linux user space:
+1. Download the latest release zip file from https://github.com/Sensirion/embedded-sht/releases and unzip
+2. cp `hw_i2c/sample-implementations/linux_user_space/sensirion_hw_i2c_implementation.c` to `hw_i2c/`
+3. type `make shtc1_example_usage.c`
+
+After that, you should have an executable called `shtc1_example_usage` that will read out the SHTC1 sensor.
 
 Example: https://github.com/winkj/raspberrypi-ess
 
