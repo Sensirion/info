@@ -28,7 +28,7 @@ TBD
 
 ## Linux Kernel drivers
 
-While our reference drivers support (Linux')[http://www.kernel.org] userspace I2C interface, there's also the option to build them into the kernel. The following drivers are available:
+While our reference drivers support [Linux'](http://www.kernel.org) userspace I2C interface, there's also the option to build them into the kernel. The following drivers are available:
 
 ### Via HWMON interface
 - SHT1x (legacy): https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht15.c
