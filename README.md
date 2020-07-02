@@ -24,8 +24,17 @@ Example: https://github.com/winkj/raspberrypi-ess
 
 ## Arduino driver repositories and examples
 
-TBD
+To simplify developing on the Arduino platform, we offer a range of dedicated libraries. Those are available directly though the Library Manager in the Arduino IDE, so installation is just a few mouse clicks away.
 
+The code can be found in the following repositories:
+- SHT series sensors: https://github.com/Sensirion/arduino-sht
+- SPS series sensors: https://github.com/Sensirion/arduino-sps
+- SDP3x and SDP8xx series sensor: https://github.com/Sensirion/arduino-sdp
+- SLF3x series sensors: https://github.com/Sensirion/arduino-liquid-flow
+
+We also provide a library for our [environmental sensor shield](https://developer.sensirion.com/platforms/environmental-sensor-shield/) products, which come with SGP30/SHTC1 and SGPC3/SHTC3 respectively: https://github.com/Sensirion/arduino-ess
+
+Finally, we offer some snippets to help getting started with our flow sensor products (SLG, SLI, SLS, SLQ-QTxxx, LG16-xxxxD, LS32, LPG10, LD20 and SLF3x): https://github.com/Sensirion/arduino-liquid-flow-snippets
 ## Linux Kernel drivers
 
 While our reference drivers support [Linux'](http://www.kernel.org) userspace I2C interface, there's also the option to build them into the kernel. The following drivers are available:
