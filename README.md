@@ -12,6 +12,8 @@ Lastly, there's a few third party repositories that we wanted to include. Please
 
 Finally, feel free to report any issues you have with the drivers on the respective github repository. If you have questions outside of the drivers we're sharing here - for example anything that's related to the sensors themselves, rather than the drivers - the best way to get help is to use the [contact form](https://www.sensirion.com/en/about-us/contact/) on the Sensirion website. 
 
+For more information, please also check out or [Developer Website](https://developer.sensirion.com/).
+
 ## Reference Drivers
 
 TBD
