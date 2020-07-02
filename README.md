@@ -34,7 +34,7 @@ TBD
 
 > :warning: Please note that libraries listed in this section are not maintained by Sensirion, and are not supported by Sensirion.
 
-> Note that this list does not claim to be complete. If you would like to have your repository listed here, please file an issue and let us know the github URL. ThHanks!
+> Note that this list does not claim to be complete. If you would like to have your repository listed here, please file an issue and let us know the github URL. Thanks!
 
 - SPS30 on Arduino by Paul van Haastrecht: https://github.com/paulvha/sps30
 - SPS30 on Raspberry Pi by Paul van Haastrecht: https://github.com/paulvha/sps30_on_raspberry
