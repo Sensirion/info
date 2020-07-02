@@ -28,6 +28,20 @@ TBD
 
 ## Linux Kernel drivers
 
+While our reference drivers support (Linux')[http://www.kernel.org] userspace I2C interface, there's also the option to build them into the kernel. The following drivers are available:
+
+### Via HWMON interface
+- SHT1x (legacy): https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht15.c
+- SHT2x: https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht21.c
+- SHT3x: https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht3x.c
+- SHTC1/SHTC3, SHTW1/SHTW2: https://github.com/torvalds/linux/blob/master/drivers/hwmon/shtc1.c
+
+### Via IIO interface
+- SGP30/ SGPC3: https://github.com/torvalds/linux/blob/master/drivers/iio/chemical/sgp30.c
+- SPS30: https://github.com/torvalds/linux/blob/master/drivers/iio/chemical/sps30.c
+
+
+
 TBD
 
 ## Third party repositories provided by our developer community
