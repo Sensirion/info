@@ -32,15 +32,17 @@ We currently support a range of sample implementation. At the time of writing th
 
 ### Repositories
 
-- SHT series: https://github.com/Sensirion/embedded-sht
-- STS series: https://github.com/Sensirion/embedded-sts
-- SCD series: https://github.com/Sensirion/embedded-scd
-- SPS series (I2C): https://github.com/Sensirion/embedded-sps
-- SPS series (UART): https://github.com/Sensirion/embedded-uart-sps
-- SFM series: https://github.com/Sensirion/embedded-sfm
-- SGP series: https://github.com/Sensirion/embedded-sgp
+|Product prefix | Function | Bus |Repository URL |
+|---------------|----------|-----|---------------|
+| SHT | humidity and temperature sensors | I2C | https://github.com/Sensirion/embedded-sht |
+| STS | temperature sensor | I2C | https://github.com/Sensirion/embedded-sts |
+| SCD | Carbon Dioxide (CO2) sensors | I2C |  https://github.com/Sensirion/embedded-scd |
+| SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) sensor | I2C | https://github.com/Sensirion/embedded-sps |
+| SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) sensor | UART |  https://github.com/Sensirion/embedded-uart-sps |
+| SFM | gas flow meter | I2C | https://github.com/Sensirion/embedded-sfm |
+| SGP | Metal-Oxide (MOX) gas sensor | I2C | https://github.com/Sensirion/embedded-sgp |
 
-- Shared code: https://github.com/Sensirion/embedded-common
+Shared code can be found here https://github.com/Sensirion/embedded-common
 
 ### Example use
 
