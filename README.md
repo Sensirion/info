@@ -34,11 +34,11 @@ We currently support a range of sample implementation. At the time of writing th
 
 |Product prefix | Function | Bus |Repository |
 |---------------|----------|-----|---------------|
-| SHT | humidity and temperature sensors | I2C | [embedded-sht](https://github.com/Sensirion/embedded-sht) |
-| STS | temperature sensor | I2C | [embedded-sts](https://github.com/Sensirion/embedded-sts) |
-| SCD | Carbon Dioxide (CO2) sensors | I2C |  [embedded-scd](https://github.com/Sensirion/embedded-scd) |
-| SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) sensor | I2C | [embedded-sps](https://github.com/Sensirion/embedded-sps) |
-| SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) sensor | UART |  [embedded-uart-sps](https://github.com/Sensirion/embedded-uart-sps) |
+| SHT | humidity and temperature | I2C | [embedded-sht](https://github.com/Sensirion/embedded-sht) |
+| STS | temperature | I2C | [embedded-sts](https://github.com/Sensirion/embedded-sts) |
+| SCD | Carbon Dioxide (CO2) | I2C |  [embedded-scd](https://github.com/Sensirion/embedded-scd) |
+| SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) | I2C | [embedded-sps](https://github.com/Sensirion/embedded-sps) |
+| SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) | UART |  [embedded-uart-sps](https://github.com/Sensirion/embedded-uart-sps) |
 | SFM | gas flow meter | I2C | [embedded-sfm](https://github.com/Sensirion/embedded-sfm) |
 | SGP | Metal-Oxide (MOX) gas sensor | I2C | [embedded-sgp](https://github.com/Sensirion/embedded-sgp) |
 
