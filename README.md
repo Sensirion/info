@@ -57,7 +57,6 @@ As an example, for the SHTC1 humidity sensor for Linux user space:
 
 After that, you should have an executable called `shtc1_example_usage` that will read out the SHTC1 sensor.
 
-Example: https://github.com/winkj/raspberrypi-ess
 
 ## Arduino driver repositories and examples
 
@@ -72,23 +71,6 @@ The code can be found in the following repositories:
 We also provide a library for our [environmental sensor shield](https://developer.sensirion.com/platforms/environmental-sensor-shield/) products, which come with SGP30/SHTC1 and SGPC3/SHTC3 respectively: https://github.com/Sensirion/arduino-ess
 
 Finally, we offer some snippets to help getting started with our flow sensor products (SLG, SLI, SLS, SLQ-QTxxx, LG16-xxxxD, LS32, LPG10, LD20 and SLF3x): https://github.com/Sensirion/arduino-liquid-flow-snippets
-## Linux Kernel drivers
-
-While our reference drivers support [Linux'](http://www.kernel.org) userspace I2C interface, there's also the option to build them into the kernel. The following drivers are available:
-
-### Via HWMON interface
-- SHT1x (legacy): https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht15.c
-- SHT2x: https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht21.c
-- SHT3x: https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht3x.c
-- SHTC1/SHTC3, SHTW1/SHTW2: https://github.com/torvalds/linux/blob/master/drivers/hwmon/shtc1.c
-
-### Via IIO interface
-- SGP30/ SGPC3: https://github.com/torvalds/linux/blob/master/drivers/iio/chemical/sgp30.c
-- SPS30: https://github.com/torvalds/linux/blob/master/drivers/iio/chemical/sps30.c
-
-
-
-TBD
 
 ## Third party repositories provided by our developer community
 
@@ -96,8 +78,24 @@ TBD
 
 > Note that this list does not claim to be complete. If you would like to have your repository listed here, please file an issue and let us know the github URL. Thanks!
 
-- SPS30 on Arduino by Paul van Haastrecht: https://github.com/paulvha/sps30
-- SPS30 on Raspberry Pi by Paul van Haastrecht: https://github.com/paulvha/sps30_on_raspberry
+### Linux Kernel drivers
+
+While our reference drivers above support [Linux'](http://www.kernel.org) userspace I2C interface, there's also the option to build them into the kernel. Some of those drivers were authored by Sensirion (and are now maintained as part of the Linux kernel). The following drivers are available:
+
+#### Via HWMON interface
+- SHT1x (legacy): https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht15.c
+- SHT2x: https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht21.c
+- SHT3x: https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht3x.c
+- SHTC1/SHTC3, SHTW1/SHTW2: https://github.com/torvalds/linux/blob/master/drivers/hwmon/shtc1.c
+
+#### Via IIO interface
+- SGP30/ SGPC3: https://github.com/torvalds/linux/blob/master/drivers/iio/chemical/sgp30.c
+- SPS30: https://github.com/torvalds/linux/blob/master/drivers/iio/chemical/sps30.c
+
+
+### From Paul van Haastrecht
+- SPS30 on Arduino : https://github.com/paulvha/sps30
+- SPS30 on Raspberry: https://github.com/paulvha/sps30_on_raspberry
 
 
 ### Sparkfun
