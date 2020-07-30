@@ -121,3 +121,15 @@ While our reference drivers above support [Linux'](http://www.kernel.org) usersp
 - SHT31 Arduino Library: https://github.com/Seeed-Studio/Grove_SHT31_Temp_Humi_Sensor
 - SHT35 Arduino Library: https://github.com/Seeed-Studio/Seeed_SHT35
 - SCD30 Arduino Library: https://github.com/Seeed-Studio/Seeed_SCD30
+
+### Rust packages for SPS30 (UART)
+
+Provided by [Ioan Herisanu](https://github.com/iohe)
+
+#### Sensirion HDLC Crate
+- Crate: https://crates.io/crates/sensirion-hdlc
+- Source code: https://github.com/iohe/sensirion-hdlc
+
+#### SPS30 UART Crate
+- Crate: https://crates.io/crates/sps30
+- Source code: https://github.com/iohe/sps30
