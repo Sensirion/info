@@ -14,7 +14,7 @@
     3. [Sparkfun](#sparkfun)
     4. [Adafruit](#adafruit)
     5. [Seeedstudio](#seeedstudio)
-    6. [Rust packages for SPS30 (UART)](#rust-packages-for-sps30-(uart))
+    6. [Rust packages](#rust-packages)
 
 ## Preface
 
@@ -138,14 +138,24 @@ While our reference drivers above support [Linux'](http://www.kernel.org) usersp
 - SHT35 Arduino Library: https://github.com/Seeed-Studio/Seeed_SHT35
 - SCD30 Arduino Library: https://github.com/Seeed-Studio/Seeed_SCD30
 
-### Rust packages for SPS30 (UART)
+### Rust packages
 
-Provided by [Ioan Herisanu](https://github.com/iohe)
-
-#### Sensirion HDLC Crate
+#### Sensirion HDLC
 - Crate: https://crates.io/crates/sensirion-hdlc
 - Source code: https://github.com/iohe/sensirion-hdlc
 
-#### SPS30 UART Crate
+#### SPS30 UART
 - Crate: https://crates.io/crates/sps30
 - Source code: https://github.com/iohe/sps30
+
+#### SHTCX Driver
+- Crate: https://crates.io/crates/shtcx
+- Source code: https://github.com/dbrgn/shtcx-rs
+
+#### SHT3x Driver
+- Crate: https://crates.io/crates/sht3x
+- Source code: https://github.com/miek/sht3x-rs
+
+#### SGP30 Driver
+- Crate: https://crates.io/crates/sgp30
+- Source code: https://github.com/dbrgn/sgp30-rs
