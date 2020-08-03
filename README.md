@@ -1,5 +1,21 @@
 # Overview over Sensirion's github repositories
 
+## Table of Contents
+
+1. [Preface](#preface)
+2. [Reference Drivers](#reference-drivers)
+    1. [Concept](#concept)
+    2. [Repositories](#repositories)
+    3. [Example use](#example-use)
+3. [Arduino driver repositories and examples](#arduino-driver-repositories-and-examples)
+4. [Third party repositories provided by our developer community](#third-party-repositories-provided-by-our-developer-community)
+    1. [Linux Kernel drivers](#linux-kernel-drivers)
+    2. [From Paul van Haastrecht](#from-paul-van-haastrecht)
+    3. [Sparkfun](#sparkfun)
+    4. [Adafruit](#adafruit)
+    5. [Seeedstudio](#seeedstudio)
+    6. [Rust packages for SPS30 (UART)](#rust-packages-for-sps30-(uart))
+
 ## Preface
 
 The goal of this page is to help users navigate the various driver offerings by Sensirion. 
