@@ -148,6 +148,10 @@ While our reference drivers above support [Linux'](http://www.kernel.org) usersp
 - Crate: https://crates.io/crates/sps30
 - Source code: https://github.com/iohe/sps30
 
+#### SPS30 I2C
+- Crate: https://crates.io/crates/sps30-i2c
+- Source code: https://github.com/david-gherghita/sps30-i2c-rs
+
 #### SHTCX Driver
 - Crate: https://crates.io/crates/shtcx
 - Source code: https://github.com/dbrgn/shtcx-rs
