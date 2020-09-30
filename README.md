@@ -8,7 +8,8 @@
     2. [Repositories](#repositories)
     3. [Example use](#example-use)
 3. [Arduino driver repositories and examples](#arduino-driver-repositories-and-examples)
-4. [Third party repositories provided by our developer community](#third-party-repositories-provided-by-our-developer-community)
+4. [Python Drivers](#python-drivers)
+5. [Third party repositories provided by our developer community](#third-party-repositories-provided-by-our-developer-community)
     1. [Linux Kernel drivers](#linux-kernel-drivers)
     2. [From Paul van Haastrecht](#from-paul-van-haastrecht)
     3. [Sparkfun](#sparkfun)
@@ -51,6 +52,9 @@ Website](https://developer.sensirion.com/).
 
 ## Reference Drivers
 
+Generic drivers for all platforms from small-scale embedded-systems to
+full-scale Operating Systems.
+
 ### Concept
 
 Our reference drivers are our suggested starting point to implement stable
@@ -58,17 +62,27 @@ products. They are tested intensively, and we provide support to our customers
 in case they face unexpected behaviour of the code.
 
 It is implemented in a platform independent way, by means of a small "Hardware
-Abstraction Layer" which abstracts the interface level commands (I2C, delay
-functions etc.) from the sensor readout protocols and timing. Because of that,
-the drivers can be ported to new platforms rather easily.
+Abstraction Layer" (HAL) which abstracts the interface level commands (I2C,
+delay functions etc.) from the sensor readout protocols and timing. Because of
+that, the drivers can be ported to new platforms rather easily.
 
 We currently support a range of sample implementation. At the time of writing
 this document, the following platforms are supported:
-- Linux I2C userspace
+- Linux (with the I2C userspace interface, see below for Linux Kernel drivers)
 - MBED OS
 - Arduino Wire library (plus alternative I2C library)
 - Microchip SAMD2
 - Nordic nRF51
+- STM32F1
+- Zephyr (User Space)
+
+The complete list of implementations is availble in the `embedded-common`
+repository.
+- For devices with an I2C controller ("hardware-I2C")
+  <https://github.com/Sensirion/embedded-common/tree/master/hw_i2c/sample-implementations>
+- For devices without an I2C controller, whereby I2C is modulated with the help
+  of General-Purpose Input/Output Pins (GPIOs) ("software-I2C")
+  <https://github.com/Sensirion/embedded-common/tree/master/sw_i2c/sample-implementations>
 
 
 ### Repositories
@@ -81,7 +95,8 @@ this document, the following platforms are supported:
 | SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) | I2C | [embedded-sps](https://github.com/Sensirion/embedded-sps) |
 | SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) | UART |  [embedded-uart-sps](https://github.com/Sensirion/embedded-uart-sps) |
 | SFM | gas flow meter | I2C | [embedded-sfm](https://github.com/Sensirion/embedded-sfm) |
-| SGP | Metal-Oxide (MOX) gas sensor | I2C | [embedded-sgp](https://github.com/Sensirion/embedded-sgp) |
+| SGP, SVM30 | Metal-Oxide (MOX) gas sensor | I2C | [embedded-sgp](https://github.com/Sensirion/embedded-sgp) |
+| SVM40 | Metal-Oxide (MOX) VOC sensor | I2C | [embedded-svm40](https://github.com/Sensirion/embedded-svm40) |
 
 Shared code can be found here <https://github.com/Sensirion/embedded-common>
 
@@ -96,13 +111,18 @@ To build a driver, there's three steps that need to be completed:
 As an example, for the SHTC1 humidity sensor for Linux user space:
 1. Download the latest release zip file from
    <https://github.com/Sensirion/embedded-sht/releases> and unzip
-2. cp
+2. Copy
    `hw_i2c/sample-implementations/linux_user_space/sensirion_hw_i2c_implementation.c`
-   to `hw_i2c/`
+   to `hw_i2c/`, thereby overwriting the empty sample implementation provided as
+   starting point for new platform support.
 3. type `make shtc1_example_usage.c`
 
 After that, you should have an executable called `shtc1_example_usage` that will
-read out the SHTC1 sensor.
+read out the SHTC1 sensor. Run it with `./shtc1_example_usage`. Depending on the
+permissions on the I2C device file (which is defined as
+`#define I2C_DEVICE_PATH "/dev/i2c-1"` in the provided sample implementation)
+you might have to add your user to the respective group or run as root with
+`sudo ./shtc1_example_usage`.
 
 
 ## Arduino driver repositories and examples
@@ -126,31 +146,53 @@ Finally, we offer some snippets to help getting started with our flow sensor
 products (SLG, SLI, SLS, SLQ-QTxxx, LG16-xxxxD, LS32, LPG10, LD20 and SLF3x):
 <https://github.com/Sensirion/arduino-liquid-flow-snippets>
 
+
+
+## Python Drivers
+
+The python drivers work with our I2C and UART (SHDLC) sensors when attached to a
+compatible system. Compatible means, that the system provides an I2C Interface
+(e.g. a Raspberry Pi on Linux) for I2C sensors, or a COM-Port/Character device
+for UART (SHDLC) sensors. The Python drivers also work for I2C sensors attached
+with a [SensorBridge](https://sensirion.com/sensorbridge).
+
+|Product prefix | Function | Bus |Repository |
+|---------------|----------|-----|---------------|
+| SensorBridge | USB to I2C Gateway | USB |  [python-shdlc-sensorbridge](https://github.com/Sensirion/python-shdlc-sensorbridge) |
+| SVM40 | humidity-compensated VOC sensor with humidity and temperature | UART | [python-shdlc-svm40](https://github.com/Sensirion/python-shdlc-svm40) |
+| SHT | humidty and temperature | I2C | [python-i2c-sht](https://github.com/Sensirion/python-i2c-sht) |
+| SFM | gas flow meter | I2C via SensorBridge | [python-sensorbridge-i2c-sfm](https://github.com/Sensirion/python-sensorbridge-i2c-sfm) |
+
+
+
 ## Third party repositories provided by our developer community
 
 > :warning: Please note that libraries listed in this section are not maintained
 > by Sensirion, and are not supported by Sensirion.
 
 > Note that this list does not claim to be complete. If you would like to have
-> your repository listed here, please file an issue and let us know the github
-> URL. Thanks!
+> your repository listed here, please submit a pull request or file an issue
+> containing the github URL. Thanks!
 
 ### Linux Kernel drivers
 
-While our reference drivers above support [Linux](http://www.kernel.org)'
+While our reference drivers above support [Linux](https://www.kernel.org)'
 userspace I2C interface, there's also the option to build them into the kernel.
 Some of those drivers were authored by Sensirion (and are now maintained as part
 of the Linux kernel). The following drivers are available:
 
 #### Via HWMON interface
 - SHT1x (legacy): <https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht15.c>
-- SHT2x: <https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht21.c>
-- SHT3x: <https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht3x.c>
-- SHTC1/SHTC3, SHTW1/SHTW2: <https://github.com/torvalds/linux/blob/master/drivers/hwmon/shtc1.c>
+- SHT2x: `CONFIG_SENSORS_SHT21` <https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht21.c>
+- SHT3x: `CONFIG_SENSORS_SHT3x` <https://github.com/torvalds/linux/blob/master/drivers/hwmon/sht3x.c>
+- SHTC1/SHTC3, SHTW1/SHTW2: `CONFIG_SENSORS_SHTC1` <https://github.com/torvalds/linux/blob/master/drivers/hwmon/shtc1.c>
 
 #### Via IIO interface
-- SGP30/ SGPC3: <https://github.com/torvalds/linux/blob/master/drivers/iio/chemical/sgp30.c>
-- SPS30: <https://github.com/torvalds/linux/blob/master/drivers/iio/chemical/sps30.c>
+- SGP30, SGPC3: `CONFIG_SENSIRION_SGP30` <https://github.com/torvalds/linux/blob/master/drivers/iio/chemical/sgp30.c>
+- SGP30, SGPC3: Out-of-tree module with more functionality and for older
+  kernels: <https://github.com/Sensirion/linux-sgp30/>
+- SPS30: `CONFIG_SPS30` <https://github.com/torvalds/linux/blob/master/drivers/iio/chemical/sps30.c>
+- SPS30: Out-of-tree module for older kernels: <https://github.com/Sensirion/linux-sgp30/>
 
 
 ### From Paul van Haastrecht
