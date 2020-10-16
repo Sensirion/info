@@ -115,7 +115,7 @@ As an example, for the SHTC1 humidity sensor for Linux user space:
    `hw_i2c/sample-implementations/linux_user_space/sensirion_hw_i2c_implementation.c`
    to `hw_i2c/`, thereby overwriting the empty sample implementation provided as
    starting point for new platform support.
-3. type `make shtc1_example_usage.c`
+3. type `make shtc1_example_usage`
 
 After that, you should have an executable called `shtc1_example_usage` that will
 read out the SHTC1 sensor. Run it with `./shtc1_example_usage`. Depending on the
