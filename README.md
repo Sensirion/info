@@ -112,8 +112,8 @@ As an example, for the SHTC1 humidity sensor for Linux user space:
 1. Download the latest release zip file from
    <https://github.com/Sensirion/embedded-sht/releases> and unzip
 2. Copy
-   `hw_i2c/sample-implementations/linux_user_space/sensirion_hw_i2c_implementation.c`
-   to `hw_i2c/`, thereby overwriting the empty sample implementation provided as
+   `embedded-common/hw_i2c/sample-implementations/linux_user_space/sensirion_hw_i2c_implementation.c`
+   to `embedded-common/hw_i2c/`, thereby overwriting the empty sample implementation provided as
    starting point for new platform support.
 3. type `make shtc1_example_usage`
 
