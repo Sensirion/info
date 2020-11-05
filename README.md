@@ -142,6 +142,11 @@ shield](https://developer.sensirion.com/platforms/environmental-sensor-shield/)
 products, which come with SGP30/SHTC1 and SGPC3/SHTC3 respectively:
 <https://github.com/Sensirion/arduino-ess>
 
+In addition to the libraries we provide sample projects for a few of our
+sensors. The zips of those project can be found at the following links:
+ - SGP40: https://github.com/Sensirion/embedded-sgp/releases/latest/
+ - SVM40: https://github.com/Sensirion/embedded-svm40/releases/latest/
+
 Finally, we offer some snippets to help getting started with our flow sensor
 products (SLG, SLI, SLS, SLQ-QTxxx, LG16-xxxxD, LS32, LPG10, LD20 and SLF3x):
 <https://github.com/Sensirion/arduino-liquid-flow-snippets>
