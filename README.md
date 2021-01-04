@@ -16,6 +16,7 @@
     4. [Adafruit](#adafruit)
     5. [Seeedstudio](#seeedstudio)
     6. [Rust packages](#rust-packages)
+    7. [Node packages](#node-packages)
 
 ## Preface
 
@@ -253,3 +254,13 @@ of the Linux kernel). The following drivers are available:
 #### SGP30 Driver
 - Crate: <https://crates.io/crates/sgp30>
 - Source code: <https://github.com/dbrgn/sgp30-rs>
+
+### Node packages
+
+#### Sensirion HDLC
+
+Node package which uses Node SerialPort and RXJS to implement Sensirion HDLC.
+
+- NPM package: <https://www.npmjs.com/package/@cytera/sensirion-hdlc>
+- Source code: <https://github.com/cytera/sensirion-hdlc-node>
+
