@@ -92,7 +92,8 @@ repository.
 |---------------|----------|-----|---------------|
 | SHT | humidity and temperature | I2C | [embedded-sht](https://github.com/Sensirion/embedded-sht) |
 | STS | temperature | I2C | [embedded-sts](https://github.com/Sensirion/embedded-sts) |
-| SCD | Carbon Dioxide (CO2) | I2C |  [embedded-scd](https://github.com/Sensirion/embedded-scd) |
+| SCD30 | Carbon Dioxide (CO2) | I2C |  [embedded-scd](https://github.com/Sensirion/embedded-scd) |
+| SCD4x | Carbon Dioxide (CO2) | I2C |  [embedded-scd4x](https://github.com/Sensirion/embedded-scd4x) |
 | SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) | I2C | [embedded-sps](https://github.com/Sensirion/embedded-sps) |
 | SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) | UART |  [embedded-uart-sps](https://github.com/Sensirion/embedded-uart-sps) |
 | SFM | gas flow meter | I2C | [embedded-sfm](https://github.com/Sensirion/embedded-sfm) |
@@ -137,6 +138,7 @@ The code can be found in the following repositories:
 - SPS series sensors: <https://github.com/Sensirion/arduino-sps>
 - SDP3x and SDP8xx series sensor: <https://github.com/Sensirion/arduino-sdp>
 - SLF3x series sensors: <https://github.com/Sensirion/arduino-liquid-flow>
+- SCD4x series sensors: <https://github.com/Sensirion/arduino-i2c-scd4x>
 
 We also provide a library for our [environmental sensor
 shield](https://developer.sensirion.com/platforms/environmental-sensor-shield/)
