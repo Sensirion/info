@@ -93,7 +93,7 @@ repository.
 | SHT | humidity and temperature | I2C | [embedded-sht](https://github.com/Sensirion/embedded-sht) |
 | STS | temperature | I2C | [embedded-sts](https://github.com/Sensirion/embedded-sts) |
 | SCD30 | Carbon Dioxide (CO2) | I2C |  [embedded-scd](https://github.com/Sensirion/embedded-scd) |
-| SCD4x | Carbon Dioxide (CO2) | I2C |  [embedded-scd4x](https://github.com/Sensirion/embedded-scd4x) |
+| SCD4x | Carbon Dioxide (CO2) | I2C |  [embedded-i2c-scd4x](https://github.com/Sensirion/embedded-i2c-scd4x) |
 | SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) | I2C | [embedded-sps](https://github.com/Sensirion/embedded-sps) |
 | SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) | UART |  [embedded-uart-sps](https://github.com/Sensirion/embedded-uart-sps) |
 | SFM | gas flow meter | I2C | [embedded-sfm](https://github.com/Sensirion/embedded-sfm) |
