@@ -99,6 +99,7 @@ repository.
 | SFM | gas flow meter | I2C | [embedded-sfm](https://github.com/Sensirion/embedded-sfm) |
 | SGP, SVM30 | Metal-Oxide (MOX) gas sensor | I2C | [embedded-sgp](https://github.com/Sensirion/embedded-sgp) |
 | SVM40 | Metal-Oxide (MOX) VOC sensor | I2C | [embedded-svm40](https://github.com/Sensirion/embedded-svm40) |
+| SVM40 | Metal-Oxide (MOX) VOC sensor | UART| [embedded-uart-svm40](https://github.com/Sensirion/embedded-uart-svm40) |
 
 Shared code can be found here <https://github.com/Sensirion/embedded-common>
 
