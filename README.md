@@ -80,10 +80,10 @@ this document, the following platforms are supported:
 The complete list of implementations is availble in the `embedded-common`
 repository.
 - For devices with an I2C controller ("hardware-I2C")
-  <https://github.com/Sensirion/embedded-common/tree/master/hw_i2c/sample-implementations>
+  <https://github.com/Sensirion/embedded-common/tree/master/i2c/sample-implementations>
 - For devices without an I2C controller, whereby I2C is modulated with the help
   of General-Purpose Input/Output Pins (GPIOs) ("software-I2C")
-  <https://github.com/Sensirion/embedded-common/tree/master/sw_i2c/sample-implementations>
+  <https://github.com/Sensirion/embedded-common/tree/master/i2c/sample-implementations/GPIO_bit_banging/sample-implementations>
 
 
 ### Repositories
@@ -115,8 +115,8 @@ As an example, for the SHTC1 humidity sensor for Linux user space:
 1. Download the latest release zip file from
    <https://github.com/Sensirion/embedded-sht/releases> and unzip
 2. Copy
-   `embedded-common/hw_i2c/sample-implementations/linux_user_space/sensirion_hw_i2c_implementation.c`
-   to `embedded-common/hw_i2c/`, thereby overwriting the empty sample implementation provided as
+   `embedded-common/i2c/sample-implementations/linux_user_space/sensirion_i2c_hal.c`
+   to `embedded-common/i2c/`, thereby overwriting the empty sample implementation provided as
    starting point for new platform support.
 3. type `make shtc1_example_usage`
 
