@@ -1,15 +1,19 @@
-# Overview over Sensirion's github repositories
+# Overview of Sensirion's GitHub Repositories
+
+| [Reference Drivers](#reference-drivers) | [Arduino](#arduino-drivers-and-examples) | [Python](#python-packages) | [Raspberry Pi](#raspberry-pi-drivers) | [Developer Community](#third-party-repositories-provided-by-our-developer-community) |
+|-------------------|---------|--------|--------------|------------|
 
 ## Table of Contents
 
 1. [Preface](#preface)
 2. [Reference Drivers](#reference-drivers)
-    1. [Concept](#concept)
-    2. [Repositories](#repositories)
+    1. [Repositories](#repositories)
+    2. [Concept](#concept)
     3. [Example use](#example-use)
-3. [Arduino driver repositories and examples](#arduino-driver-repositories-and-examples)
-4. [Python Drivers](#python-drivers)
-5. [Third party repositories provided by our developer community](#third-party-repositories-provided-by-our-developer-community)
+3. [Arduino Drivers and Examples](#arduino-drivers-and-examples)
+4. [Python Packages](#python-packages)
+5. [RaspberryPi Drivers](#raspberry-pi-drivers)
+6. [Third party repositories provided by our developer community](#third-party-repositories-provided-by-our-developer-community)
     1. [Linux Kernel drivers](#linux-kernel-drivers)
     2. [From Paul van Haastrecht](#from-paul-van-haastrecht)
     3. [Sparkfun](#sparkfun)
@@ -23,38 +27,84 @@
 The goal of this page is to help users navigate the various driver offerings by
 Sensirion.
 
-Sensirion is offering reference driver implementations that are meant to support
-customers in their product designs. These are tested extensively, and cover most
-of the common functionality of our sensors. They are also written in a platform
-independent way, to enable easy porting to new platforms. Because of that, they
-tend to be a bit more complex than a simple platform specific library, but offer
-peace of mind for the user to freely move to a different hardware platform with
-minimal adjustments. These drivers are described in the [Reference
-Drivers](#reference-drivers) section below.
+### «Platform independent drivers requiring minimal porting efforts»
 
-We are also offering some platform specific libraries, in particular for Arduino
-based platforms. These offer reduced complexity, but cannot be ported to other
-platforms easily. See the section [Arduino driver repositories and
-examples](#arduino-driver-repositories-and-examples) below.
+Sensirion is offering reference driver implementations that are meant to
+support customers in their product designs. These are tested extensively, and
+cover most of the common functionality of our sensors. They are also written in
+a platform independent way, to enable easy porting to new platforms. Because of
+that, they tend to be a bit more complex than a simple platform specific
+library, but offer peace of mind for the user to freely move to a different
+hardware platform with minimal adjustments. These drivers are described in
+the [Reference Drivers](#reference-drivers) section below.
 
-Lastly, there's a few third party repositories that we wanted to include. Please
-note that Sensirion is creating these projects and therefore being listed there
-is not an official endorsement, but there's really great work out there by our
-community that we wanted to share with you!
+| [Reference Drivers](#reference-drivers) |
+|---|
+
+### «Platform specific prototyping starters»
+
+We are also offering some platform specific libraries and code snippets to
+boost your prototyping activities. We have an extensive set
+of [Arduino drivers and examples](#arduino-drivers-and-examples)
+and [Python packages](#python-packages), which can be used to communicate with
+our sensors via the
+[Sensirion SensorBridge](https://sensirion.com/sensorbridge) ([Sensirion Evaluation Kit](https://sensirion.com/sek))
+.
+
+We also offer some preconfigured and simplified variations of the reference
+drivers for the RaspberryPi platform. See the
+section [RaspberryPi Drivers](#Raspberry-Pi-Drivers)
+
+| [Arduino](#arduino-drivers-and-examples)  | [RaspberryPi](#Raspberry-Pi-Drivers) | [Python](#python-packages)
+|---|---|---|
+
+### «Thank you to the open source community»
+
+Lastly, there's a few third party repositories that we wanted to include.
+Please note that Sensirion is creating these projects and therefore being
+listed there is not an official endorsement, but there's really great work out
+there by our community that we wanted to share with you!
+
+| [Community Picks](#third-party-repositories-provided-by-our-developer-community) |
+|---|
 
 Finally, feel free to report any issues you have with the drivers on the
-respective github repository. If you have questions outside of the drivers we're
+respective GitHub repository. If you have questions beyond the drivers we're
 sharing here - for example anything that's related to the sensors themselves,
-rather than the drivers - the best way to get help is to use the [contact
-form](https://www.sensirion.com/en/about-us/contact/) on the Sensirion website.
+rather than the drivers - the best way to get help is to use
+the [contact form](https://www.sensirion.com/en/about-us/contact/) on the
+Sensirion website.
 
-For more information, please also check out or [Developer
-Website](https://developer.sensirion.com/).
+For more information, please also check out
+or [Developer Website](https://developer.sensirion.com/).
 
 ## Reference Drivers
 
 Generic drivers for all platforms from small-scale embedded-systems to
 full-scale Operating Systems.
+
+### Repositories
+
+| Product | Function | Bus |Repository |
+|---------|----------|-----|-----------|
+| SCD | Carbon Dioxide (CO2) | I2C | [embedded-scd](https://github.com/Sensirion/embedded-scd) |
+| SCD4X | Carbon Dioxide (CO2) | I2C | [embedded-i2c-scd4x](https://github.com/Sensirion/embedded-i2c-scd4x) |
+| SEN44 | Multi Sensor Environmental Nodes | I2C | [embedded-i2c-sen44](https://github.com/Sensirion/embedded-i2c-sen44) |
+| SEN44 | Multi Sensor Environmental Nodes | UART | [embedded-uart-sen44](https://github.com/Sensirion/embedded-uart-sen44) |
+| SFA3X | Formaldehyde | I2C | [embedded-sfa3x](https://github.com/Sensirion/embedded-sfa3x) |
+| SFM | Gas Flow Meter | I2C | [embedded-sfm](https://github.com/Sensirion/embedded-sfm) |
+| SGP | Metal-Oxide (MOX) Gas | I2C | [embedded-sgp](https://github.com/Sensirion/embedded-sgp) |
+| SHT | Humidity and Temperature | I2C | [embedded-sht](https://github.com/Sensirion/embedded-sht) |
+| SHT4X | Humidity and Temperature | I2C | [embedded-i2c-sht4x](https://github.com/Sensirion/embedded-i2c-sht4x) |
+| SPS | Particulate Matter | I2C | [embedded-sps](https://github.com/Sensirion/embedded-sps) |
+| SPS | Particulate Matter | UART | [embedded-uart-sps](https://github.com/Sensirion/embedded-uart-sps) |
+| STC3X | Carbon Dioxide (CO2) | I2C | [embedded-i2c-stc3x](https://github.com/Sensirion/embedded-i2c-stc3x) |
+| STS | Temperature | I2C | [embedded-sts](https://github.com/Sensirion/embedded-sts) |
+| SVM40 | Metal-Oxide (MOX) Gas | I2C | [embedded-i2c-svm40](https://github.com/Sensirion/embedded-i2c-svm40) |
+| SVM40 | Metal-Oxide (MOX) Gas | I2C | [embedded-svm40](https://github.com/Sensirion/embedded-svm40) |
+| SVM40 | Metal-Oxide (MOX) Gas | UART | [embedded-uart-svm40](https://github.com/Sensirion/embedded-uart-svm40) |
+
+Shared code can be found here <https://github.com/Sensirion/embedded-common>
 
 ### Concept
 
@@ -69,6 +119,7 @@ that, the drivers can be ported to new platforms rather easily.
 
 We currently support a range of sample implementation. At the time of writing
 this document, the following platforms are supported:
+
 - Linux (with the I2C userspace interface, see below for Linux Kernel drivers)
 - MBED OS
 - Arduino Wire library (plus alternative I2C library)
@@ -79,101 +130,124 @@ this document, the following platforms are supported:
 
 The complete list of implementations is availble in the `embedded-common`
 repository.
+
 - For devices with an I2C controller ("hardware-I2C")
   <https://github.com/Sensirion/embedded-common/tree/master/i2c/sample-implementations>
 - For devices without an I2C controller, whereby I2C is modulated with the help
   of General-Purpose Input/Output Pins (GPIOs) ("software-I2C")
   <https://github.com/Sensirion/embedded-common/tree/master/i2c/sample-implementations/GPIO_bit_banging/sample-implementations>
 
-
-### Repositories
-
-|Product prefix | Function | Bus |Repository |
-|---------------|----------|-----|---------------|
-| SHT | humidity and temperature | I2C | [embedded-sht](https://github.com/Sensirion/embedded-sht) |
-| STS | temperature | I2C | [embedded-sts](https://github.com/Sensirion/embedded-sts) |
-| SCD30 | Carbon Dioxide (CO2) | I2C |  [embedded-scd](https://github.com/Sensirion/embedded-scd) |
-| SCD4x | Carbon Dioxide (CO2) | I2C |  [embedded-i2c-scd4x](https://github.com/Sensirion/embedded-i2c-scd4x) |
-| SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) | I2C | [embedded-sps](https://github.com/Sensirion/embedded-sps) |
-| SPS | Particulate Matter (PM0.5, PM1.0, PM2.5, PM4 and PM10) | UART |  [embedded-uart-sps](https://github.com/Sensirion/embedded-uart-sps) |
-| SFM | gas flow meter | I2C | [embedded-sfm](https://github.com/Sensirion/embedded-sfm) |
-| SGP, SVM30 | Metal-Oxide (MOX) gas sensor | I2C | [embedded-sgp](https://github.com/Sensirion/embedded-sgp) |
-| SVM40 | Metal-Oxide (MOX) VOC sensor | I2C | [embedded-svm40](https://github.com/Sensirion/embedded-svm40) |
-| SVM40 | Metal-Oxide (MOX) VOC sensor | UART| [embedded-uart-svm40](https://github.com/Sensirion/embedded-uart-svm40) |
-
-Shared code can be found here <https://github.com/Sensirion/embedded-common>
-
 ### Example use
 
 To build a driver, there's three steps that need to be completed:
 
-1. Download the a release zip file from Github
+1. Download the release zip file from GitHub
 2. Configure your platform, or build your own platform support file
 3. Compile example / integrate into your application
 
 As an example, for the SHTC1 humidity sensor for Linux user space:
+
 1. Download the latest release zip file from
    <https://github.com/Sensirion/embedded-sht/releases> and unzip
 2. Copy
    `embedded-common/i2c/sample-implementations/linux_user_space/sensirion_i2c_hal.c`
-   to `embedded-common/i2c/`, thereby overwriting the empty sample implementation provided as
-   starting point for new platform support.
+   to `embedded-common/i2c/`, thereby overwriting the empty sample
+   implementation provided as starting point for new platform support.
 3. type `make shtc1_example_usage`
 
-After that, you should have an executable called `shtc1_example_usage` that will
-read out the SHTC1 sensor. Run it with `./shtc1_example_usage`. Depending on the
-permissions on the I2C device file (which is defined as
+After that, you should have an executable called `shtc1_example_usage` that
+will read out the SHTC1 sensor. Run it with `./shtc1_example_usage`. Depending
+on the permissions on the I2C device file (which is defined as
 `#define I2C_DEVICE_PATH "/dev/i2c-1"` in the provided sample implementation)
 you might have to add your user to the respective group or run as root with
 `sudo ./shtc1_example_usage`.
 
-
-## Arduino driver repositories and examples
+## Arduino Drivers and Examples
 
 To simplify developing on the Arduino platform, we offer a range of dedicated
 libraries. Those are available directly though the Library Manager in the
-Arduino IDE, so installation is just a few mouse clicks away.
+Arduino IDE or here on GitHub, so installation is just a few mouse clicks away.
 
 The code can be found in the following repositories:
-- SHT series sensors: <https://github.com/Sensirion/arduino-sht>
-- SPS series sensors: <https://github.com/Sensirion/arduino-sps>
-- SDP3x and SDP8xx series sensor: <https://github.com/Sensirion/arduino-sdp>
-- SLF3x series sensors: <https://github.com/Sensirion/arduino-liquid-flow>
-- SCD4x series sensors: <https://github.com/Sensirion/arduino-i2c-scd4x>
 
-We also provide a library for our [environmental sensor
-shield](https://developer.sensirion.com/platforms/environmental-sensor-shield/)
+| Product | Function | Bus |Repository |
+|---------|----------|-----|-----------|
+| ESS | Environmental Sensor Shield (SGP3x + SHT) | I2C | [arduino-ess](https://github.com/Sensirion/arduino-ess) |
+| SCD4X | Carbon Dioxide (CO2) | I2C | [arduino-i2c-scd4x](https://github.com/Sensirion/arduino-i2c-scd4x) |
+| SDP | Differential Pressure | I2C | [arduino-sdp](https://github.com/Sensirion/arduino-sdp) |
+| SDP3X | Differential Pressure | I2C | [arduino-sdp](https://github.com/Sensirion/arduino-sdp) |
+| SDP8X | Differential Pressure | I2C | [arduino-sdp](https://github.com/Sensirion/arduino-sdp) |
+| SEN44 | Multi Sensor Environmental Nodes | I2C | [arduino-i2c-sen44](https://github.com/Sensirion/arduino-i2c-sen44) |
+| SEN44 | Multi Sensor Environmental Nodes | UART | [arduino-uart-sen44](https://github.com/Sensirion/arduino-uart-sen44) |
+| SFA3X | Formaldehyde | I2C | [arduino-i2c-sfa3x](https://github.com/Sensirion/arduino-i2c-sfa3x) |
+| SFA3X | Formaldehyde | UART | [arduino-uart-sfa3x](https://github.com/Sensirion/arduino-uart-sfa3x) |
+| SFM3019 | Gas Flow Meter | I2C | [embedded-sfm/arduino](https://github.com/Sensirion/embedded-sfm/releases/latest/) |
+| SHT | Humidity and Temperature | I2C | [arduino-sht](https://github.com/Sensirion/arduino-sht) |
+| SHT4X | Humidity and Temperature | I2C | [arduino-i2c-sht4x](https://github.com/Sensirion/arduino-i2c-sht4x) |
+| SLF3X | Liquid Flow Meter | I2C | [arduino-liquid-flow](https://github.com/Sensirion/arduino-liquid-flow) |
+| SPS | Particulate Matter | I2C | [arduino-sps](https://github.com/Sensirion/arduino-sps) |
+| STC3X | Carbon Dioxide (CO2) | I2C | [arduino-i2c-stc3x](https://github.com/Sensirion/arduino-i2c-stc3x) |
+| SVM40 | Metal-Oxide (MOX) Gas | I2C | [arduino-i2c-svm40](https://github.com/Sensirion/arduino-i2c-svm40) |
+| SVM40 | Metal-Oxide (MOX) Gas | UART | [arduino-uart-svm40](https://github.com/Sensirion/arduino-uart-svm40) |
+
+Shared code can be found
+here: [Arduino Core](https://github.com/Sensirion/arduino-core)
+
+We also provide a library for
+our [Environmental Sensor Shield](https://developer.sensirion.com/platforms/environmental-sensor-shield/)
 products, which come with SGP30/SHTC1 and SGPC3/SHTC3 respectively:
-<https://github.com/Sensirion/arduino-ess>
+[Arduino-ESS](https://github.com/Sensirion/arduino-ess)
 
-In addition to the libraries we provide sample projects for a few of our
-sensors. The zips of those project can be found at the following links:
- - SGP40: https://github.com/Sensirion/embedded-sgp/releases/latest/
- - SVM40: https://github.com/Sensirion/embedded-svm40/releases/latest/
- - SFM3019: https://github.com/Sensirion/embedded-sfm/releases/latest/
+Finally, we offer some snippets to bootstrap our flow sensor based prototypes
+(SLG, SLI, SLS, SLQ-QTxxx, LG16-xxxxD, LS32, LPG10, LD20 and SLF3x):
+[Arduino Liquid Flow Snippets](https://github.com/Sensirion/arduino-liquid-flow-snippets)
 
-Finally, we offer some snippets to help getting started with our flow sensor
-products (SLG, SLI, SLS, SLQ-QTxxx, LG16-xxxxD, LS32, LPG10, LD20 and SLF3x):
-<https://github.com/Sensirion/arduino-liquid-flow-snippets>
+Want to understand every single step of your Arduino driver in one file? Check
+the
+[Arduino Snippets](https://github.com/Sensirion/arduino-snippets) and learn it
+from scratch.
 
+## Python Packages
 
+The python packages work with our I2C and UART (SHDLC) sensors when attached to
+a compatible system. Compatible means, that the system provides an I2C
+Interface (e.g. a Raspberry Pi on Linux) for I2C sensors, or a
+COM-Port/Character device for UART (SHDLC) sensors. The Python drivers also
+work for I2C sensors attached with
+a [SensorBridge](https://sensirion.com/sensorbridge)
 
-## Python Drivers
-
-The python drivers work with our I2C and UART (SHDLC) sensors when attached to a
-compatible system. Compatible means, that the system provides an I2C Interface
-(e.g. a Raspberry Pi on Linux) for I2C sensors, or a COM-Port/Character device
-for UART (SHDLC) sensors. The Python drivers also work for I2C sensors attached
-with a [SensorBridge](https://sensirion.com/sensorbridge).
-
-|Product prefix | Function | Bus |Repository |
-|---------------|----------|-----|---------------|
+| Product | Function | Bus |Repository |
+|---------|----------|-----|-----------|
 | SensorBridge | USB to I2C Gateway | USB |  [python-shdlc-sensorbridge](https://github.com/Sensirion/python-shdlc-sensorbridge) |
-| SVM40 | humidity-compensated VOC sensor with humidity and temperature | UART | [python-shdlc-svm40](https://github.com/Sensirion/python-shdlc-svm40) |
-| SHT | humidty and temperature | I2C | [python-i2c-sht](https://github.com/Sensirion/python-i2c-sht) |
-| SFM | gas flow meter | I2C via SensorBridge | [python-sensorbridge-i2c-sfm](https://github.com/Sensirion/python-sensorbridge-i2c-sfm) |
+| SCD | Carbon Dioxide (CO2) | I2C | [python-i2c-scd](https://github.com/Sensirion/python-i2c-scd) |
+| SFA3X | Formaldehyde | UART | [python-shdlc-sfa3x](https://github.com/Sensirion/python-shdlc-sfa3x) |
+| SFC5XXX | Mass Flow Controller for Gasses | UART | [python-shdlc-sfc5xxx](https://github.com/Sensirion/python-shdlc-sfc5xxx) |
+| SFM | Gas Flow Meter | I2C | [python-sensorbridge-i2c-sfm](https://github.com/Sensirion/python-sensorbridge-i2c-sfm) |
+| SHT | Humidity and Temperature | I2C | [python-i2c-sht](https://github.com/Sensirion/python-i2c-sht) |
+| STC | Carbon Dioxide (CO2) | I2C | [python-i2c-stc](https://github.com/Sensirion/python-i2c-stc) |
+| SVM40 | Metal-Oxide (MOX) Gas | I2C | [python-i2c-svm40](https://github.com/Sensirion/python-i2c-svm40) |
+| SVM40 | Metal-Oxide (MOX) Gas | UART | [python-shdlc-svm40](https://github.com/Sensirion/python-shdlc-svm40) |
 
+## Raspberry Pi Drivers
 
+The Raspberry Pi drivers are [Reference Drivers](#reference-drivers), which we
+configured for Raspberry Pi and should work out of the box. See the
+corresponding README.md files for detailed setup and installation instructions.
+
+Learn how to port any [Reference Drivers](#reference-drivers) to Raspberry Pi
+by reading [this section](#example-use).
+
+| Product | Function | Bus |Repository |
+|---------|----------|-----|-----------|
+| SCD4X | Carbon Dioxide (CO2) | I2C | [raspberry-pi-i2c-scd4x](https://github.com/Sensirion/raspberry-pi-i2c-scd4x) |
+| SEN44 | Multi Sensor Environmental Nodes | I2C | [raspberry-pi-i2c-sen44](https://github.com/Sensirion/raspberry-pi-i2c-sen44) |
+| SEN44 | Multi Sensor Environmental Nodes | UART | [raspberry-pi-uart-sen44](https://github.com/Sensirion/raspberry-pi-uart-sen44) |
+| SFA3X | Formaldehyde | I2C | [raspberry-pi-i2c-sfa3x](https://github.com/Sensirion/raspberry-pi-i2c-sfa3x) |
+| SFA3X | Formaldehyde | UART | [raspberry-pi-uart-sfa3x](https://github.com/Sensirion/raspberry-pi-uart-sfa3x) |
+| SHT4X | Humidity and Temperature | I2C | [raspberry-pi-i2c-sht4x](https://github.com/Sensirion/raspberry-pi-i2c-sht4x) |
+| STC3X | Carbon Dioxide (CO2) | I2C | [raspberry-pi-i2c-stc3x](https://github.com/Sensirion/raspberry-pi-i2c-stc3x) |
+| SVM40 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-svm40](https://github.com/Sensirion/raspberry-pi-i2c-svm40) |
+| SVM40 | Metal-Oxide (MOX) Gas | UART | [raspberry-pi-uart-svm40](https://github.com/Sensirion/raspberry-pi-uart-svm40) |
 
 ## Third party repositories provided by our developer community
 
@@ -266,4 +340,3 @@ Node package which uses Node SerialPort and RXJS to implement Sensirion HDLC.
 
 - NPM package: <https://www.npmjs.com/package/@cytera/sensirion-hdlc>
 - Source code: <https://github.com/cytera/sensirion-hdlc-node>
-
