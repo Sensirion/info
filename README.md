@@ -89,11 +89,14 @@ full-scale Operating Systems.
 |---------|----------|-----|-----------|
 | SCD | Carbon Dioxide (CO2) | I2C | [embedded-scd](https://github.com/Sensirion/embedded-scd) |
 | SCD4X | Carbon Dioxide (CO2) | I2C | [embedded-i2c-scd4x](https://github.com/Sensirion/embedded-i2c-scd4x) |
+| SDP | Differential Pressure | I2C | [embedded-i2c-sdp](https://github.com/Sensirion/embedded-i2c-sdp) |
 | SEN44 | Multi Sensor Environmental Nodes | I2C | [embedded-i2c-sen44](https://github.com/Sensirion/embedded-i2c-sen44) |
 | SEN44 | Multi Sensor Environmental Nodes | UART | [embedded-uart-sen44](https://github.com/Sensirion/embedded-uart-sen44) |
 | SFA3X | Formaldehyde | I2C | [embedded-sfa3x](https://github.com/Sensirion/embedded-sfa3x) |
 | SFM | Gas Flow Meter | I2C | [embedded-sfm](https://github.com/Sensirion/embedded-sfm) |
 | SGP | Metal-Oxide (MOX) Gas | I2C | [embedded-sgp](https://github.com/Sensirion/embedded-sgp) |
+| SGP40 | Metal-Oxide (MOX) Gas | I2C | [embedded-i2c-sgp40](https://github.com/Sensirion/embedded-i2c-sgp40) |
+| SGP41 | Metal-Oxide (MOX) Gas | I2C | [embedded-i2c-sgp41](https://github.com/Sensirion/embedded-i2c-sgp41) |
 | SHT | Humidity and Temperature | I2C | [embedded-sht](https://github.com/Sensirion/embedded-sht) |
 | SHT4X | Humidity and Temperature | I2C | [embedded-i2c-sht4x](https://github.com/Sensirion/embedded-i2c-sht4x) |
 | SPS | Particulate Matter | I2C | [embedded-sps](https://github.com/Sensirion/embedded-sps) |
@@ -174,6 +177,7 @@ The code can be found in the following repositories:
 |---------|----------|-----|-----------|
 | ESS | Environmental Sensor Shield (SGP3x + SHT) | I2C | [arduino-ess](https://github.com/Sensirion/arduino-ess) |
 | SCD4X | Carbon Dioxide (CO2) | I2C | [arduino-i2c-scd4x](https://github.com/Sensirion/arduino-i2c-scd4x) |
+| SDP | Differential Pressure | I2C | [arduino-i2c-sdp](https://github.com/Sensirion/arduino-i2c-sdp) |
 | SDP | Differential Pressure | I2C | [arduino-sdp](https://github.com/Sensirion/arduino-sdp) |
 | SDP3X | Differential Pressure | I2C | [arduino-sdp](https://github.com/Sensirion/arduino-sdp) |
 | SDP8X | Differential Pressure | I2C | [arduino-sdp](https://github.com/Sensirion/arduino-sdp) |
@@ -182,6 +186,8 @@ The code can be found in the following repositories:
 | SFA3X | Formaldehyde | I2C | [arduino-i2c-sfa3x](https://github.com/Sensirion/arduino-i2c-sfa3x) |
 | SFA3X | Formaldehyde | UART | [arduino-uart-sfa3x](https://github.com/Sensirion/arduino-uart-sfa3x) |
 | SFM3019 | Gas Flow Meter | I2C | [embedded-sfm/arduino](https://github.com/Sensirion/embedded-sfm/releases/latest/) |
+| SGP40 | Metal-Oxide (MOX) Gas | I2C | [arduino-i2c-sgp40](https://github.com/Sensirion/arduino-i2c-sgp40) |
+| SGP41 | Metal-Oxide (MOX) Gas | I2C | [arduino-i2c-sgp41](https://github.com/Sensirion/arduino-i2c-sgp41) |
 | SHT | Humidity and Temperature | I2C | [arduino-sht](https://github.com/Sensirion/arduino-sht) |
 | SHT4X | Humidity and Temperature | I2C | [arduino-i2c-sht4x](https://github.com/Sensirion/arduino-i2c-sht4x) |
 | SLF3X | Liquid Flow Meter | I2C | [arduino-liquid-flow](https://github.com/Sensirion/arduino-liquid-flow) |
@@ -220,9 +226,11 @@ a [SensorBridge](https://sensirion.com/sensorbridge)
 |---------|----------|-----|-----------|
 | SensorBridge | USB to I2C Gateway | USB |  [python-shdlc-sensorbridge](https://github.com/Sensirion/python-shdlc-sensorbridge) |
 | SCD | Carbon Dioxide (CO2) | I2C | [python-i2c-scd](https://github.com/Sensirion/python-i2c-scd) |
+| SDP | Differential Pressure | I2C | [python-i2c-sdp](https://github.com/Sensirion/python-i2c-sdp) |
 | SFA3X | Formaldehyde | UART | [python-shdlc-sfa3x](https://github.com/Sensirion/python-shdlc-sfa3x) |
 | SFC5XXX | Mass Flow Controller for Gasses | UART | [python-shdlc-sfc5xxx](https://github.com/Sensirion/python-shdlc-sfc5xxx) |
 | SFM | Gas Flow Meter | I2C | [python-sensorbridge-i2c-sfm](https://github.com/Sensirion/python-sensorbridge-i2c-sfm) |
+| SGP4X | Metal-Oxide (MOX) Gas | I2C | [python-i2c-sgp4x](https://github.com/Sensirion/python-i2c-sgp4x) |
 | SHT | Humidity and Temperature | I2C | [python-i2c-sht](https://github.com/Sensirion/python-i2c-sht) |
 | STC | Carbon Dioxide (CO2) | I2C | [python-i2c-stc](https://github.com/Sensirion/python-i2c-stc) |
 | SVM40 | Metal-Oxide (MOX) Gas | I2C | [python-i2c-svm40](https://github.com/Sensirion/python-i2c-svm40) |
@@ -240,10 +248,13 @@ by reading [this section](#example-use).
 | Product | Function | Bus |Repository |
 |---------|----------|-----|-----------|
 | SCD4X | Carbon Dioxide (CO2) | I2C | [raspberry-pi-i2c-scd4x](https://github.com/Sensirion/raspberry-pi-i2c-scd4x) |
+| SDP | Differential Pressure | I2C | [raspberry-pi-i2c-sdp](https://github.com/Sensirion/raspberry-pi-i2c-sdp) |
 | SEN44 | Multi Sensor Environmental Nodes | I2C | [raspberry-pi-i2c-sen44](https://github.com/Sensirion/raspberry-pi-i2c-sen44) |
 | SEN44 | Multi Sensor Environmental Nodes | UART | [raspberry-pi-uart-sen44](https://github.com/Sensirion/raspberry-pi-uart-sen44) |
 | SFA3X | Formaldehyde | I2C | [raspberry-pi-i2c-sfa3x](https://github.com/Sensirion/raspberry-pi-i2c-sfa3x) |
 | SFA3X | Formaldehyde | UART | [raspberry-pi-uart-sfa3x](https://github.com/Sensirion/raspberry-pi-uart-sfa3x) |
+| SGP40 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-sgp40](https://github.com/Sensirion/raspberry-pi-i2c-sgp40) |
+| SGP41 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-sgp41](https://github.com/Sensirion/raspberry-pi-i2c-sgp41) |
 | SHT4X | Humidity and Temperature | I2C | [raspberry-pi-i2c-sht4x](https://github.com/Sensirion/raspberry-pi-i2c-sht4x) |
 | STC3X | Carbon Dioxide (CO2) | I2C | [raspberry-pi-i2c-stc3x](https://github.com/Sensirion/raspberry-pi-i2c-stc3x) |
 | SVM40 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-svm40](https://github.com/Sensirion/raspberry-pi-i2c-svm40) |
