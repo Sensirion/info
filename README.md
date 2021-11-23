@@ -183,8 +183,6 @@ The code can be found in the following repositories:
 | SCD4X | Carbon Dioxide (CO2) | I2C | [arduino-i2c-scd4x](https://github.com/Sensirion/arduino-i2c-scd4x) |
 | SDP | Differential Pressure | I2C | [arduino-i2c-sdp](https://github.com/Sensirion/arduino-i2c-sdp) |
 | SDP | Differential Pressure | I2C | [arduino-sdp](https://github.com/Sensirion/arduino-sdp) |
-| SDP3X | Differential Pressure | I2C | [arduino-sdp](https://github.com/Sensirion/arduino-sdp) |
-| SDP8X | Differential Pressure | I2C | [arduino-sdp](https://github.com/Sensirion/arduino-sdp) |
 | SEN44 | Multi Sensor Environmental Nodes | I2C | [arduino-i2c-sen44](https://github.com/Sensirion/arduino-i2c-sen44) |
 | SEN44 | Multi Sensor Environmental Nodes | UART | [arduino-uart-sen44](https://github.com/Sensirion/arduino-uart-sen44) |
 | SFA3X | Formaldehyde | I2C | [arduino-i2c-sfa3x](https://github.com/Sensirion/arduino-i2c-sfa3x) |
