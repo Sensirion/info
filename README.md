@@ -1,18 +1,18 @@
 # Overview of Sensirion's GitHub Repositories
 
-| [Reference Drivers](#reference-drivers) | [Arduino](#arduino-drivers-and-examples) | [Python](#python-packages) | [Raspberry Pi](#raspberry-pi-drivers) | [Developer Community](#third-party-repositories-provided-by-our-developer-community) |
+| [Reference Drivers](#reference-drivers-and-examples) | [Arduino](#arduino-drivers-and-examples) | [Python](#python-packages) | [Raspberry Pi](#raspberry-pi-drivers-and-examples) | [Developer Community](#third-party-repositories-provided-by-our-developer-community) |
 |-------------------|---------|--------|--------------|------------|
 
 ## Table of Contents
 
 1. [Preface](#preface)
-2. [Reference Drivers](#reference-drivers)
+2. [Reference Drivers and Examples](#reference-drivers-and-examples)
     1. [Repositories](#repositories)
     2. [Concept](#concept)
     3. [Example use](#example-use)
 3. [Arduino Drivers and Examples](#arduino-drivers-and-examples)
 4. [Python Packages](#python-packages)
-5. [RaspberryPi Drivers](#raspberry-pi-drivers)
+5. [RaspberryPi Drivers and Examples](#raspberry-pi-drivers-and-examples)
 6. [Third party repositories provided by our developer community](#third-party-repositories-provided-by-our-developer-community)
     1. [Linux Kernel drivers](#linux-kernel-drivers)
     2. [From Paul van Haastrecht](#from-paul-van-haastrecht)
@@ -36,9 +36,9 @@ a platform independent way, to enable easy porting to new platforms. Because of
 that, they tend to be a bit more complex than a simple platform specific
 library, but offer peace of mind for the user to freely move to a different
 hardware platform with minimal adjustments. These drivers are described in
-the [Reference Drivers](#reference-drivers) section below.
+the [Reference Drivers and Examples](#reference-drivers-and-examples) section below.
 
-| [Reference Drivers](#reference-drivers) |
+| [Reference Drivers](#reference-drivers-and-examples) |
 |---|
 
 ### «Platform specific prototyping starters»
@@ -53,7 +53,7 @@ our sensors via the
 
 We also offer some preconfigured and simplified variations of the reference
 drivers for the RaspberryPi platform. See the
-section [RaspberryPi Drivers](#Raspberry-Pi-Drivers)
+section [RaspberryPi Drivers and Examples](#Raspberry-Pi-Drivers)
 
 | [Arduino](#arduino-drivers-and-examples)  | [RaspberryPi](#Raspberry-Pi-Drivers) | [Python](#python-packages)
 |---|---|---|
@@ -78,7 +78,7 @@ Sensirion website.
 For more information, please also check out
 or [Developer Website](https://developer.sensirion.com/).
 
-## Reference Drivers
+## Reference Drivers and Examples
 
 Generic drivers for all platforms from small-scale embedded-systems to
 full-scale Operating Systems.
@@ -87,6 +87,7 @@ full-scale Operating Systems.
 
 | Product | Function | Bus |Repository |
 |---------|----------|-----|-----------|
+| Gas Index Algorithm | Algorithm providing Index output signals from the SGP40/41 raw signals | I2C | [gas-index-algorithm](https://github.com/Sensirion/gas-index-algorithm) |
 | SCD | Carbon Dioxide (CO2) | I2C | [embedded-scd](https://github.com/Sensirion/embedded-scd) |
 | SCD4X | Carbon Dioxide (CO2) | I2C | [embedded-i2c-scd4x](https://github.com/Sensirion/embedded-i2c-scd4x) |
 | SDP | Differential Pressure | I2C | [embedded-i2c-sdp](https://github.com/Sensirion/embedded-i2c-sdp) |
@@ -106,6 +107,8 @@ full-scale Operating Systems.
 | SVM40 | Metal-Oxide (MOX) Gas | I2C | [embedded-i2c-svm40](https://github.com/Sensirion/embedded-i2c-svm40) |
 | SVM40 | Metal-Oxide (MOX) Gas | I2C | [embedded-svm40](https://github.com/Sensirion/embedded-svm40) |
 | SVM40 | Metal-Oxide (MOX) Gas | UART | [embedded-uart-svm40](https://github.com/Sensirion/embedded-uart-svm40) |
+| SVM41 | Metal-Oxide (MOX) Gas | I2C | [embedded-i2c-svm41](https://github.com/Sensirion/embedded-i2c-svm41) |
+| SVM41 | Metal-Oxide (MOX) Gas | UART | [embedded-uart-svm41](https://github.com/Sensirion/embedded-uart-svm41) |
 
 Shared code can be found here <https://github.com/Sensirion/embedded-common>
 
@@ -175,6 +178,7 @@ The code can be found in the following repositories:
 
 | Product | Function | Bus |Repository |
 |---------|----------|-----|-----------|
+| Gas Index Algorithm | Algorithm providing Index output signals from the SGP40/41 raw signals | I2C | [arduino-gas-index-algorithm](https://github.com/Sensirion/arduino-gas-index-algorithm) |
 | ESS | Environmental Sensor Shield (SGP3x + SHT) | I2C | [arduino-ess](https://github.com/Sensirion/arduino-ess) |
 | SCD4X | Carbon Dioxide (CO2) | I2C | [arduino-i2c-scd4x](https://github.com/Sensirion/arduino-i2c-scd4x) |
 | SDP | Differential Pressure | I2C | [arduino-i2c-sdp](https://github.com/Sensirion/arduino-i2c-sdp) |
@@ -195,6 +199,8 @@ The code can be found in the following repositories:
 | STC3X | Carbon Dioxide (CO2) | I2C | [arduino-i2c-stc3x](https://github.com/Sensirion/arduino-i2c-stc3x) |
 | SVM40 | Metal-Oxide (MOX) Gas | I2C | [arduino-i2c-svm40](https://github.com/Sensirion/arduino-i2c-svm40) |
 | SVM40 | Metal-Oxide (MOX) Gas | UART | [arduino-uart-svm40](https://github.com/Sensirion/arduino-uart-svm40) |
+| SVM41 | Metal-Oxide (MOX) Gas | I2C | [arduino-i2c-svm41](https://github.com/Sensirion/arduino-i2c-svm41) |
+| SVM41 | Metal-Oxide (MOX) Gas | UART | [arduino-uart-svm41](https://github.com/Sensirion/arduino-uart-svm41) |
 
 Shared code can be found
 here: [Arduino Core](https://github.com/Sensirion/arduino-core)
@@ -225,6 +231,7 @@ a [SensorBridge](https://sensirion.com/sensorbridge)
 | Product | Function | Bus |Repository |
 |---------|----------|-----|-----------|
 | SensorBridge | USB to I2C Gateway | USB |  [python-shdlc-sensorbridge](https://github.com/Sensirion/python-shdlc-sensorbridge) |
+| Gas Index Algorithm | Algorithm providing Index output signals from the SGP40/41 raw signals | I2C | [gas-index-algorithm](https://github.com/Sensirion/gas-index-algorithm) |
 | SCD | Carbon Dioxide (CO2) | I2C | [python-i2c-scd](https://github.com/Sensirion/python-i2c-scd) |
 | SDP | Differential Pressure | I2C | [python-i2c-sdp](https://github.com/Sensirion/python-i2c-sdp) |
 | SFA3X | Formaldehyde | UART | [python-shdlc-sfa3x](https://github.com/Sensirion/python-shdlc-sfa3x) |
@@ -236,17 +243,18 @@ a [SensorBridge](https://sensirion.com/sensorbridge)
 | SVM40 | Metal-Oxide (MOX) Gas | I2C | [python-i2c-svm40](https://github.com/Sensirion/python-i2c-svm40) |
 | SVM40 | Metal-Oxide (MOX) Gas | UART | [python-shdlc-svm40](https://github.com/Sensirion/python-shdlc-svm40) |
 
-## Raspberry Pi Drivers
+## Raspberry Pi Drivers and Examples
 
-The Raspberry Pi drivers are [Reference Drivers](#reference-drivers), which we
+The Raspberry Pi drivers are [Reference Drivers](#reference-drivers-and-examples), which we
 configured for Raspberry Pi and should work out of the box. See the
 corresponding README.md files for detailed setup and installation instructions.
 
-Learn how to port any [Reference Drivers](#reference-drivers) to Raspberry Pi
+Learn how to port any [Reference Drivers](#reference-drivers-and-examples) to Raspberry Pi
 by reading [this section](#example-use).
 
 | Product | Function | Bus |Repository |
 |---------|----------|-----|-----------|
+| Gas Index Algorithm | Algorithm providing Index output signals from the SGP40/41 raw signals | I2C | [gas-index-algorithm](https://github.com/Sensirion/gas-index-algorithm) |
 | SCD4X | Carbon Dioxide (CO2) | I2C | [raspberry-pi-i2c-scd4x](https://github.com/Sensirion/raspberry-pi-i2c-scd4x) |
 | SDP | Differential Pressure | I2C | [raspberry-pi-i2c-sdp](https://github.com/Sensirion/raspberry-pi-i2c-sdp) |
 | SEN44 | Multi Sensor Environmental Nodes | I2C | [raspberry-pi-i2c-sen44](https://github.com/Sensirion/raspberry-pi-i2c-sen44) |
@@ -259,6 +267,8 @@ by reading [this section](#example-use).
 | STC3X | Carbon Dioxide (CO2) | I2C | [raspberry-pi-i2c-stc3x](https://github.com/Sensirion/raspberry-pi-i2c-stc3x) |
 | SVM40 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-svm40](https://github.com/Sensirion/raspberry-pi-i2c-svm40) |
 | SVM40 | Metal-Oxide (MOX) Gas | UART | [raspberry-pi-uart-svm40](https://github.com/Sensirion/raspberry-pi-uart-svm40) |
+| SVM41 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-svm41](https://github.com/Sensirion/raspberry-pi-i2c-svm41) |
+| SVM41 | Metal-Oxide (MOX) Gas | UART | [raspberry-pi-uart-svm41](https://github.com/Sensirion/raspberry-pi-uart-svm41) |
 
 ## Third party repositories provided by our developer community
 
