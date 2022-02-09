@@ -104,6 +104,7 @@ full-scale Operating Systems.
 | SPS | Particulate Matter | UART | [embedded-uart-sps](https://github.com/Sensirion/embedded-uart-sps) |
 | STC3X | Carbon Dioxide (CO2) | I2C | [embedded-i2c-stc3x](https://github.com/Sensirion/embedded-i2c-stc3x) |
 | STS | Temperature | I2C | [embedded-sts](https://github.com/Sensirion/embedded-sts) |
+| STS4x | Temperature | I2C | [embedded-i2c-sts4x](https://github.com/Sensirion/embedded-i2c-sts4x) |
 | SVM40 | Metal-Oxide (MOX) Gas | I2C | [embedded-i2c-svm40](https://github.com/Sensirion/embedded-i2c-svm40) |
 | SVM40 | Metal-Oxide (MOX) Gas | I2C | [embedded-svm40](https://github.com/Sensirion/embedded-svm40) |
 | SVM40 | Metal-Oxide (MOX) Gas | UART | [embedded-uart-svm40](https://github.com/Sensirion/embedded-uart-svm40) |
@@ -192,6 +193,7 @@ The code can be found in the following repositories:
 | SGP41 | Metal-Oxide (MOX) Gas | I2C | [arduino-i2c-sgp41](https://github.com/Sensirion/arduino-i2c-sgp41) |
 | SHT | Humidity and Temperature | I2C | [arduino-sht](https://github.com/Sensirion/arduino-sht) |
 | SHT4X | Humidity and Temperature | I2C | [arduino-i2c-sht4x](https://github.com/Sensirion/arduino-i2c-sht4x) |
+| STS4X | Temperature | I2C | [arduino-i2c-sts4x](https://github.com/Sensirion/arduino-i2c-sts4x) |
 | SLF3X | Liquid Flow Meter | I2C | [arduino-liquid-flow](https://github.com/Sensirion/arduino-liquid-flow) |
 | SPS | Particulate Matter | I2C | [arduino-sps](https://github.com/Sensirion/arduino-sps) |
 | STC3X | Carbon Dioxide (CO2) | I2C | [arduino-i2c-stc3x](https://github.com/Sensirion/arduino-i2c-stc3x) |
@@ -262,6 +264,7 @@ by reading [this section](#example-use).
 | SGP40 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-sgp40](https://github.com/Sensirion/raspberry-pi-i2c-sgp40) |
 | SGP41 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-sgp41](https://github.com/Sensirion/raspberry-pi-i2c-sgp41) |
 | SHT4X | Humidity and Temperature | I2C | [raspberry-pi-i2c-sht4x](https://github.com/Sensirion/raspberry-pi-i2c-sht4x) |
+| STS4X | Temperature | I2C | [raspberry-pi-i2c-sts4x](https://github.com/Sensirion/raspberry-pi-i2c-sts4x) |
 | STC3X | Carbon Dioxide (CO2) | I2C | [raspberry-pi-i2c-stc3x](https://github.com/Sensirion/raspberry-pi-i2c-stc3x) |
 | SVM40 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-svm40](https://github.com/Sensirion/raspberry-pi-i2c-svm40) |
 | SVM40 | Metal-Oxide (MOX) Gas | UART | [raspberry-pi-uart-svm40](https://github.com/Sensirion/raspberry-pi-uart-svm40) |
