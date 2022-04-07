@@ -110,6 +110,8 @@ full-scale Operating Systems.
 | SVM40 | Metal-Oxide (MOX) Gas | UART | [embedded-uart-svm40](https://github.com/Sensirion/embedded-uart-svm40) |
 | SVM41 | Metal-Oxide (MOX) Gas | I2C | [embedded-i2c-svm41](https://github.com/Sensirion/embedded-i2c-svm41) |
 | SVM41 | Metal-Oxide (MOX) Gas | UART | [embedded-uart-svm41](https://github.com/Sensirion/embedded-uart-svm41) |
+| SLF3x | Liquid Flow | I2C | [embedded-i2c-sf06-lf](https://github.com/Sensirion/embedded-i2c-sf06-lf) |
+| LD20 | Liquid Flow | I2C | [embedded-i2c-sf06-lf](https://github.com/Sensirion/embedded-i2c-sf06-lf) |
 
 Shared code can be found here <https://github.com/Sensirion/embedded-common>
 
@@ -201,6 +203,8 @@ The code can be found in the following repositories:
 | SVM40 | Metal-Oxide (MOX) Gas | UART | [arduino-uart-svm40](https://github.com/Sensirion/arduino-uart-svm40) |
 | SVM41 | Metal-Oxide (MOX) Gas | I2C | [arduino-i2c-svm41](https://github.com/Sensirion/arduino-i2c-svm41) |
 | SVM41 | Metal-Oxide (MOX) Gas | UART | [arduino-uart-svm41](https://github.com/Sensirion/arduino-uart-svm41) |
+| SLF3x | Liquid Flow | I2C | [arduino-i2c-sf06-lf](https://github.com/Sensirion/arduino-i2c-sf06-lf) |
+| LD20 | Liquid Flow | I2C | [arduino-i2c-sf06-lf](https://github.com/Sensirion/arduino-i2c-sf06-lf) |
 
 Shared code can be found
 here: [Arduino Core](https://github.com/Sensirion/arduino-core)
@@ -242,6 +246,8 @@ a [SensorBridge](https://sensirion.com/sensorbridge)
 | STC | Carbon Dioxide (CO2) | I2C | [python-i2c-stc](https://github.com/Sensirion/python-i2c-stc) |
 | SVM40 | Metal-Oxide (MOX) Gas | I2C | [python-i2c-svm40](https://github.com/Sensirion/python-i2c-svm40) |
 | SVM40 | Metal-Oxide (MOX) Gas | UART | [python-shdlc-svm40](https://github.com/Sensirion/python-shdlc-svm40) |
+| SLF3x | Liquid Flow | I2C | [python-i2c-sf06-lf](https://github.com/Sensirion/python-i2c-sf06-lf) |
+| LD20 | Liquid Flow | I2C | [python-i2c-sf06-lf](https://github.com/Sensirion/python-i2c-sf06-lf) |
 
 ## Raspberry Pi Drivers and Examples
 
@@ -270,6 +276,8 @@ by reading [this section](#example-use).
 | SVM40 | Metal-Oxide (MOX) Gas | UART | [raspberry-pi-uart-svm40](https://github.com/Sensirion/raspberry-pi-uart-svm40) |
 | SVM41 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-svm41](https://github.com/Sensirion/raspberry-pi-i2c-svm41) |
 | SVM41 | Metal-Oxide (MOX) Gas | UART | [raspberry-pi-uart-svm41](https://github.com/Sensirion/raspberry-pi-uart-svm41) |
+| SLF3x | Liquid Flow | I2C | [raspberry-pi-i2c-sf06-lf](https://github.com/Sensirion/raspberry-pi-i2c-sf06-lf) |
+| LD20 | Liquid Flow | I2C | [raspberry-pi-i2c-sf06-lf](https://github.com/Sensirion/raspberry-pi-i2c-sf06-lf) |
 
 ## Third party repositories provided by our developer community
 
