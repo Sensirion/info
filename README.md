@@ -89,10 +89,12 @@ full-scale Operating Systems.
 |---------|----------|-----|-----------|
 | Gas Index Algorithm | Algorithm providing Index output signals from the SGP40/41 raw signals | I2C | [gas-index-algorithm](https://github.com/Sensirion/gas-index-algorithm) |
 | SCD | Carbon Dioxide (CO2) | I2C | [embedded-scd](https://github.com/Sensirion/embedded-scd) |
+| SCD30 | Carbon Dioxide (CO2) | I2C | [embedded-i2c-scd30](https://github.com/Sensirion/embedded-i2c-scd30) |
 | SCD4X | Carbon Dioxide (CO2) | I2C | [embedded-i2c-scd4x](https://github.com/Sensirion/embedded-i2c-scd4x) |
 | SDP | Differential Pressure | I2C | [embedded-i2c-sdp](https://github.com/Sensirion/embedded-i2c-sdp) |
 | SEN44 | Multi Sensor Environmental Nodes | I2C | [embedded-i2c-sen44](https://github.com/Sensirion/embedded-i2c-sen44) |
 | SEN44 | Multi Sensor Environmental Nodes | UART | [embedded-uart-sen44](https://github.com/Sensirion/embedded-uart-sen44) |
+| SEN5x | Multi Sensor Environmental Nodes | I2C | [embedded-i2c-sen5x](https://github.com/Sensirion/embedded-i2c-sen5x) |
 | SFA3X | Formaldehyde | I2C | [embedded-sfa3x](https://github.com/Sensirion/embedded-sfa3x) |
 | SFM | Gas Flow Meter | I2C | [embedded-sfm](https://github.com/Sensirion/embedded-sfm) |
 | SGP | Metal-Oxide (MOX) Gas | I2C | [embedded-sgp](https://github.com/Sensirion/embedded-sgp) |
@@ -183,11 +185,13 @@ The code can be found in the following repositories:
 |---------|----------|-----|-----------|
 | Gas Index Algorithm | Algorithm providing Index output signals from the SGP40/41 raw signals | I2C | [arduino-gas-index-algorithm](https://github.com/Sensirion/arduino-gas-index-algorithm) |
 | ESS | Environmental Sensor Shield (SGP3x + SHT) | I2C | [arduino-ess](https://github.com/Sensirion/arduino-ess) |
+| SCD30 | Carbon Dioxide (CO2) | I2C | [arduino-i2c-scd30](https://github.com/Sensirion/arduino-i2c-scd30) |
 | SCD4X | Carbon Dioxide (CO2) | I2C | [arduino-i2c-scd4x](https://github.com/Sensirion/arduino-i2c-scd4x) |
 | SDP | Differential Pressure | I2C | [arduino-i2c-sdp](https://github.com/Sensirion/arduino-i2c-sdp) |
 | SDP | Differential Pressure | I2C | [arduino-sdp](https://github.com/Sensirion/arduino-sdp) |
 | SEN44 | Multi Sensor Environmental Nodes | I2C | [arduino-i2c-sen44](https://github.com/Sensirion/arduino-i2c-sen44) |
 | SEN44 | Multi Sensor Environmental Nodes | UART | [arduino-uart-sen44](https://github.com/Sensirion/arduino-uart-sen44) |
+| SEN5x | Multi Sensor Environmental Nodes | I2C | [arduino-i2c-sen5x](https://github.com/Sensirion/arduino-i2c-sen5x) |
 | SFA3X | Formaldehyde | I2C | [arduino-i2c-sfa3x](https://github.com/Sensirion/arduino-i2c-sfa3x) |
 | SFA3X | Formaldehyde | UART | [arduino-uart-sfa3x](https://github.com/Sensirion/arduino-uart-sfa3x) |
 | SFM3019 | Gas Flow Meter | I2C | [embedded-sfm/arduino](https://github.com/Sensirion/embedded-sfm/releases/latest/) |
@@ -236,7 +240,8 @@ a [SensorBridge](https://sensirion.com/sensorbridge)
 |---------|----------|-----|-----------|
 | SensorBridge | USB to I2C Gateway | USB |  [python-shdlc-sensorbridge](https://github.com/Sensirion/python-shdlc-sensorbridge) |
 | Gas Index Algorithm | Algorithm providing Index output signals from the SGP40/41 raw signals | I2C | [gas-index-algorithm](https://github.com/Sensirion/gas-index-algorithm) |
-| SCD | Carbon Dioxide (CO2) | I2C | [python-i2c-scd](https://github.com/Sensirion/python-i2c-scd) |
+| SCD30 | Carbon Dioxide (CO2) | I2C | [python-i2c-scd30](https://github.com/Sensirion/python-i2c-scd30) |
+| SCD4x | Carbon Dioxide (CO2) | I2C | [python-i2c-scd](https://github.com/Sensirion/python-i2c-scd) |
 | SDP | Differential Pressure | I2C | [python-i2c-sdp](https://github.com/Sensirion/python-i2c-sdp) |
 | SFA3X | Formaldehyde | UART | [python-shdlc-sfa3x](https://github.com/Sensirion/python-shdlc-sfa3x) |
 | SFC5XXX | Mass Flow Controller for Gasses | UART | [python-shdlc-sfc5xxx](https://github.com/Sensirion/python-shdlc-sfc5xxx) |
@@ -248,6 +253,8 @@ a [SensorBridge](https://sensirion.com/sensorbridge)
 | SVM40 | Metal-Oxide (MOX) Gas | UART | [python-shdlc-svm40](https://github.com/Sensirion/python-shdlc-svm40) |
 | SLF3x | Liquid Flow | I2C | [python-i2c-sf06-lf](https://github.com/Sensirion/python-i2c-sf06-lf) |
 | LD20 | Liquid Flow | I2C | [python-i2c-sf06-lf](https://github.com/Sensirion/python-i2c-sf06-lf) |
+| SEN5x | Multi Sensor Environmental Nodes | I2C | [python-i2c-sen5x](https://github.com/Sensirion/python-i2c-sen5x) |
+
 
 ## Raspberry Pi Drivers and Examples
 
@@ -261,10 +268,12 @@ by reading [this section](#example-use).
 | Product | Function | Bus |Repository |
 |---------|----------|-----|-----------|
 | Gas Index Algorithm | Algorithm providing Index output signals from the SGP40/41 raw signals | I2C | [gas-index-algorithm](https://github.com/Sensirion/gas-index-algorithm) |
+| SCD30 | Carbon Dioxide (CO2) | I2C | [raspberry-pi-i2c-scd30](https://github.com/Sensirion/raspberry-pi-i2c-scd30) |
 | SCD4X | Carbon Dioxide (CO2) | I2C | [raspberry-pi-i2c-scd4x](https://github.com/Sensirion/raspberry-pi-i2c-scd4x) |
 | SDP | Differential Pressure | I2C | [raspberry-pi-i2c-sdp](https://github.com/Sensirion/raspberry-pi-i2c-sdp) |
 | SEN44 | Multi Sensor Environmental Nodes | I2C | [raspberry-pi-i2c-sen44](https://github.com/Sensirion/raspberry-pi-i2c-sen44) |
 | SEN44 | Multi Sensor Environmental Nodes | UART | [raspberry-pi-uart-sen44](https://github.com/Sensirion/raspberry-pi-uart-sen44) |
+| SEN5x | Multi Sensor Environmental Nodes | I2C | [raspberry-pi-i2c-sen5x](https://github.com/Sensirion/raspberry-pi-i2c-sen5x) |
 | SFA3X | Formaldehyde | I2C | [raspberry-pi-i2c-sfa3x](https://github.com/Sensirion/raspberry-pi-i2c-sfa3x) |
 | SFA3X | Formaldehyde | UART | [raspberry-pi-uart-sfa3x](https://github.com/Sensirion/raspberry-pi-uart-sfa3x) |
 | SGP40 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-sgp40](https://github.com/Sensirion/raspberry-pi-i2c-sgp40) |
