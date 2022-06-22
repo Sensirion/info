@@ -194,6 +194,7 @@ The code can be found in the following repositories:
 | SEN5x | Multi Sensor Environmental Nodes | I2C | [arduino-i2c-sen5x](https://github.com/Sensirion/arduino-i2c-sen5x) |
 | SFA3X | Formaldehyde | I2C | [arduino-i2c-sfa3x](https://github.com/Sensirion/arduino-i2c-sfa3x) |
 | SFA3X | Formaldehyde | UART | [arduino-uart-sfa3x](https://github.com/Sensirion/arduino-uart-sfa3x) |
+| SFM3000 | Gas Flow Meter | I2C | [arduino-i2c-sfm3000](https://github.com/Sensirion/arduino-i2c-sfm3000) |
 | SFM3019 | Gas Flow Meter | I2C | [embedded-sfm/arduino](https://github.com/Sensirion/embedded-sfm/releases/latest/) |
 | SGP40 | Metal-Oxide (MOX) Gas | I2C | [arduino-i2c-sgp40](https://github.com/Sensirion/arduino-i2c-sgp40) |
 | SGP41 | Metal-Oxide (MOX) Gas | I2C | [arduino-i2c-sgp41](https://github.com/Sensirion/arduino-i2c-sgp41) |
@@ -209,6 +210,7 @@ The code can be found in the following repositories:
 | SVM41 | Metal-Oxide (MOX) Gas | UART | [arduino-uart-svm41](https://github.com/Sensirion/arduino-uart-svm41) |
 | SLF3x | Liquid Flow | I2C | [arduino-i2c-sf06-lf](https://github.com/Sensirion/arduino-i2c-sf06-lf) |
 | LD20 | Liquid Flow | I2C | [arduino-i2c-sf06-lf](https://github.com/Sensirion/arduino-i2c-sf06-lf) |
+
 
 Shared code can be found
 here: [Arduino Core](https://github.com/Sensirion/arduino-core)
