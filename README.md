@@ -112,11 +112,8 @@ full-scale Operating Systems.
 | STC3X | Carbon Dioxide (CO2) | I2C | [embedded-i2c-stc3x](https://github.com/Sensirion/embedded-i2c-stc3x) |
 | STS | Temperature | I2C | [embedded-sts](https://github.com/Sensirion/embedded-sts) |
 | STS4x | Temperature | I2C | [embedded-i2c-sts4x](https://github.com/Sensirion/embedded-i2c-sts4x) |
-| SVM40 | Metal-Oxide (MOX) Gas | I2C | [embedded-i2c-svm40](https://github.com/Sensirion/embedded-i2c-svm40) |
-| SVM40 | Metal-Oxide (MOX) Gas | I2C | [embedded-svm40](https://github.com/Sensirion/embedded-svm40) |
-| SVM40 | Metal-Oxide (MOX) Gas | UART | [embedded-uart-svm40](https://github.com/Sensirion/embedded-uart-svm40) |
-| SVM41 | Metal-Oxide (MOX) Gas | I2C | [embedded-i2c-svm41](https://github.com/Sensirion/embedded-i2c-svm41) |
-| SVM41 | Metal-Oxide (MOX) Gas | UART | [embedded-uart-svm41](https://github.com/Sensirion/embedded-uart-svm41) |
+| SVM4x | Metal-Oxide (MOX) Gas | I2C | [embedded-i2c-svm4x](https://github.com/Sensirion/embedded-i2c-svm4x) |
+| SVM4x | Metal-Oxide (MOX) Gas | UART | [embedded-uart-svm4x](https://github.com/Sensirion/embedded-uart-svm4x) |
 | SLF3x | Liquid Flow | I2C | [embedded-i2c-sf06-lf](https://github.com/Sensirion/embedded-i2c-sf06-lf) |
 | LD20 | Liquid Flow | I2C | [embedded-i2c-sf06-lf](https://github.com/Sensirion/embedded-i2c-sf06-lf) |
 
@@ -215,10 +212,8 @@ The code can be found in the following repositories:
 | SLF3X | Liquid Flow Meter | I2C | [arduino-liquid-flow](https://github.com/Sensirion/arduino-liquid-flow) |
 | SPS | Particulate Matter | I2C | [arduino-sps](https://github.com/Sensirion/arduino-sps) |
 | STC3X | Carbon Dioxide (CO2) | I2C | [arduino-i2c-stc3x](https://github.com/Sensirion/arduino-i2c-stc3x) |
-| SVM40 | Metal-Oxide (MOX) Gas | I2C | [arduino-i2c-svm40](https://github.com/Sensirion/arduino-i2c-svm40) |
-| SVM40 | Metal-Oxide (MOX) Gas | UART | [arduino-uart-svm40](https://github.com/Sensirion/arduino-uart-svm40) |
-| SVM41 | Metal-Oxide (MOX) Gas | I2C | [arduino-i2c-svm41](https://github.com/Sensirion/arduino-i2c-svm41) |
-| SVM41 | Metal-Oxide (MOX) Gas | UART | [arduino-uart-svm41](https://github.com/Sensirion/arduino-uart-svm41) |
+| SVM4x | Metal-Oxide (MOX) Gas | I2C | [arduino-i2c-svm4x](https://github.com/Sensirion/arduino-i2c-svm4x) |
+| SVM4x | Metal-Oxide (MOX) Gas | UART | [arduino-uart-svm4x](https://github.com/Sensirion/arduino-uart-svm4x) |
 | SLF3x | Liquid Flow | I2C | [arduino-i2c-sf06-lf](https://github.com/Sensirion/arduino-i2c-sf06-lf) |
 | LD20 | Liquid Flow | I2C | [arduino-i2c-sf06-lf](https://github.com/Sensirion/arduino-i2c-sf06-lf) |
 
@@ -268,8 +263,8 @@ a [SensorBridge](https://sensirion.com/sensorbridge)
 | SGP4X | Metal-Oxide (MOX) Gas | I2C | [python-i2c-sgp4x](https://github.com/Sensirion/python-i2c-sgp4x) |
 | SHT | Humidity and Temperature | I2C | [python-i2c-sht](https://github.com/Sensirion/python-i2c-sht) |
 | STC | Carbon Dioxide (CO2) | I2C | [python-i2c-stc](https://github.com/Sensirion/python-i2c-stc) |
-| SVM40 | Metal-Oxide (MOX) Gas | I2C | [python-i2c-svm40](https://github.com/Sensirion/python-i2c-svm40) |
-| SVM40 | Metal-Oxide (MOX) Gas | UART | [python-shdlc-svm40](https://github.com/Sensirion/python-shdlc-svm40) |
+| SVM4x | Metal-Oxide (MOX) Gas | I2C | [python-i2c-svm4x](https://github.com/Sensirion/python-i2c-svm4x) |
+| SVM4x | Metal-Oxide (MOX) Gas | UART | [python-shdlc-svm4x](https://github.com/Sensirion/python-shdlc-svm4x) |
 | SLF3x | Liquid Flow | I2C | [python-i2c-sf06-lf](https://github.com/Sensirion/python-i2c-sf06-lf) |
 | LD20 | Liquid Flow | I2C | [python-i2c-sf06-lf](https://github.com/Sensirion/python-i2c-sf06-lf) |
 | SEN5x | Multi Sensor Environmental Nodes | I2C | [python-i2c-sen5x](https://github.com/Sensirion/python-i2c-sen5x) |
@@ -300,10 +295,8 @@ by reading [this section](#example-use).
 | SHT4X | Humidity and Temperature | I2C | [raspberry-pi-i2c-sht4x](https://github.com/Sensirion/raspberry-pi-i2c-sht4x) |
 | STS4X | Temperature | I2C | [raspberry-pi-i2c-sts4x](https://github.com/Sensirion/raspberry-pi-i2c-sts4x) |
 | STC3X | Carbon Dioxide (CO2) | I2C | [raspberry-pi-i2c-stc3x](https://github.com/Sensirion/raspberry-pi-i2c-stc3x) |
-| SVM40 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-svm40](https://github.com/Sensirion/raspberry-pi-i2c-svm40) |
-| SVM40 | Metal-Oxide (MOX) Gas | UART | [raspberry-pi-uart-svm40](https://github.com/Sensirion/raspberry-pi-uart-svm40) |
-| SVM41 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-svm41](https://github.com/Sensirion/raspberry-pi-i2c-svm41) |
-| SVM41 | Metal-Oxide (MOX) Gas | UART | [raspberry-pi-uart-svm41](https://github.com/Sensirion/raspberry-pi-uart-svm41) |
+| SVM4x | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-svm4x](https://github.com/Sensirion/raspberry-pi-i2c-svm4x) |
+| SVM4x | Metal-Oxide (MOX) Gas | UART | [raspberry-pi-uart-svm4x](https://github.com/Sensirion/raspberry-pi-uart-svm4x) |
 | SLF3x | Liquid Flow | I2C | [raspberry-pi-i2c-sf06-lf](https://github.com/Sensirion/raspberry-pi-i2c-sf06-lf) |
 | LD20 | Liquid Flow | I2C | [raspberry-pi-i2c-sf06-lf](https://github.com/Sensirion/raspberry-pi-i2c-sf06-lf) |
 | SFM3003 | Gas Flow Meter | I2C | [raspberry-pi-i2c-sfm-sf06](https://github.com/Sensirion/raspberry-pi-i2c-sfm-sf06) |
