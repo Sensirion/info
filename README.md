@@ -187,7 +187,6 @@ The code can be found in the following repositories:
 | Product | Function | Bus |Repository |
 |---------|----------|-----|-----------|
 | Gas Index Algorithm | Algorithm providing Index output signals from the SGP40/41 raw signals | I2C | [arduino-gas-index-algorithm](https://github.com/Sensirion/arduino-gas-index-algorithm) |
-| ESS | Environmental Sensor Shield (SGP3x + SHT) | I2C | [arduino-ess](https://github.com/Sensirion/arduino-ess) |
 | SCD30 | Carbon Dioxide (CO2) | I2C | [arduino-i2c-scd30](https://github.com/Sensirion/arduino-i2c-scd30) |
 | SCD4X | Carbon Dioxide (CO2) | I2C | [arduino-i2c-scd4x](https://github.com/Sensirion/arduino-i2c-scd4x) |
 | SDP | Differential Pressure | I2C | [arduino-i2c-sdp](https://github.com/Sensirion/arduino-i2c-sdp) |
@@ -222,11 +221,6 @@ The code can be found in the following repositories:
 
 Shared code can be found
 here: [Arduino Core](https://github.com/Sensirion/arduino-core)
-
-We also provide a library for
-our [Environmental Sensor Shield](https://developer.sensirion.com/platforms/environmental-sensor-shield/)
-products, which come with SGP30/SHTC1 and SGPC3/SHTC3 respectively:
-[Arduino-ESS](https://github.com/Sensirion/arduino-ess)
 
 Finally, we offer some snippets to bootstrap our flow sensor based prototypes
 (SLG, SLI, SLS, SLQ-QTxxx, LG16-xxxxD, LS32, LPG10, LD20 and SLF3x):
