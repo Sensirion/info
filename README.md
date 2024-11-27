@@ -95,6 +95,7 @@ full-scale Operating Systems.
 | SEN44 | Multi Sensor Environmental Nodes | I2C | [embedded-i2c-sen44](https://github.com/Sensirion/embedded-i2c-sen44) |
 | SEN44 | Multi Sensor Environmental Nodes | UART | [embedded-uart-sen44](https://github.com/Sensirion/embedded-uart-sen44) |
 | SEN5x | Multi Sensor Environmental Nodes | I2C | [embedded-i2c-sen5x](https://github.com/Sensirion/embedded-i2c-sen5x) |
+| SEN66 | Multi Sensor Environmental Nodes | I2C | [embedded-i2c-sen66](https://github.com/Sensirion/embedded-i2c-sen66) |
 | SFA3X | Formaldehyde | I2C | [embedded-sfa3x](https://github.com/Sensirion/embedded-sfa3x) |
 | SFM | Gas Flow Meter | I2C | [embedded-sfm](https://github.com/Sensirion/embedded-sfm) |
 | SFM3003 | Gas Flow Meter | I2C | [embedded-i2c-sfm-sf06](https://github.com/Sensirion/embedded-i2c-sfm-sf06) |
@@ -195,6 +196,7 @@ The code can be found in the following repositories:
 | SEN44 | Multi Sensor Environmental Nodes | I2C | [arduino-i2c-sen44](https://github.com/Sensirion/arduino-i2c-sen44) |
 | SEN44 | Multi Sensor Environmental Nodes | UART | [arduino-uart-sen44](https://github.com/Sensirion/arduino-uart-sen44) |
 | SEN5x | Multi Sensor Environmental Nodes | I2C | [arduino-i2c-sen5x](https://github.com/Sensirion/arduino-i2c-sen5x) |
+| SEN66 | Multi Sensor Environmental Nodes | I2C | [arduino-i2c-sen66](https://github.com/Sensirion/arduino-i2c-sen66) |
 | SFA3X | Formaldehyde | I2C | [arduino-i2c-sfa3x](https://github.com/Sensirion/arduino-i2c-sfa3x) |
 | SFA3X | Formaldehyde | UART | [arduino-uart-sfa3x](https://github.com/Sensirion/arduino-uart-sfa3x) |
 | SFM3000 | Gas Flow Meter | I2C | [arduino-i2c-sfm3000](https://github.com/Sensirion/arduino-i2c-sfm3000) |
@@ -267,6 +269,7 @@ a [SensorBridge](https://sensirion.com/sensorbridge)
 | SLF3x | Liquid Flow | I2C | [python-i2c-sf06-lf](https://github.com/Sensirion/python-i2c-sf06-lf) |
 | LD20 | Liquid Flow | I2C | [python-i2c-sf06-lf](https://github.com/Sensirion/python-i2c-sf06-lf) |
 | SEN5x | Multi Sensor Environmental Nodes | I2C | [python-i2c-sen5x](https://github.com/Sensirion/python-i2c-sen5x) |
+| SEN66 | Multi Sensor Environmental Nodes | I2C | [python-i2c-sen66](https://github.com/Sensirion/python-i2c-sen66) |
 
 
 ## Raspberry Pi Drivers and Examples
@@ -287,6 +290,7 @@ by reading [this section](#example-use).
 | SEN44 | Multi Sensor Environmental Nodes | I2C | [raspberry-pi-i2c-sen44](https://github.com/Sensirion/raspberry-pi-i2c-sen44) |
 | SEN44 | Multi Sensor Environmental Nodes | UART | [raspberry-pi-uart-sen44](https://github.com/Sensirion/raspberry-pi-uart-sen44) |
 | SEN5x | Multi Sensor Environmental Nodes | I2C | [raspberry-pi-i2c-sen5x](https://github.com/Sensirion/raspberry-pi-i2c-sen5x) |
+| SEN66 | Multi Sensor Environmental Nodes | I2C | [raspberry-pi-i2c-sen66](https://github.com/Sensirion/raspberry-pi-i2c-sen66) |
 | SFA3X | Formaldehyde | I2C | [raspberry-pi-i2c-sfa3x](https://github.com/Sensirion/raspberry-pi-i2c-sfa3x) |
 | SFA3X | Formaldehyde | UART | [raspberry-pi-uart-sfa3x](https://github.com/Sensirion/raspberry-pi-uart-sfa3x) |
 | SGP40 | Metal-Oxide (MOX) Gas | I2C | [raspberry-pi-i2c-sgp40](https://github.com/Sensirion/raspberry-pi-i2c-sgp40) |
