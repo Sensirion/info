@@ -263,7 +263,6 @@ a [SensorBridge](https://sensirion.com/sensorbridge)
 | SGP4X | Metal-Oxide (MOX) Gas | I2C | [python-i2c-sgp4x](https://github.com/Sensirion/python-i2c-sgp4x) |
 | SHT3x | Humidity and Temperature | I2C | [python-i2c-sht3x](https://github.com/Sensirion/python-i2c-sht3x) |
 | SHT4x | Humidity and Temperature | I2C | [python-i2c-sht4x](https://github.com/Sensirion/python-i2c-sht4x) |
-| SHT3x | Humidity and Temperature | I2C | [python-i2c-sht3x](https://github.com/Sensirion/python-i2c-sht3x) |
 | STC | Carbon Dioxide (CO2) | I2C | [python-i2c-stc](https://github.com/Sensirion/python-i2c-stc) |
 | SVM4x | Metal-Oxide (MOX) Gas | I2C | [python-i2c-svm4x](https://github.com/Sensirion/python-i2c-svm4x) |
 | SVM4x | Metal-Oxide (MOX) Gas | UART | [python-shdlc-svm4x](https://github.com/Sensirion/python-shdlc-svm4x) |
