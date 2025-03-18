@@ -96,7 +96,8 @@ full-scale Operating Systems.
 | SEN44 | Multi Sensor Environmental Nodes | UART | [embedded-uart-sen44](https://github.com/Sensirion/embedded-uart-sen44) |
 | SEN5x | Multi Sensor Environmental Nodes | I2C | [embedded-i2c-sen5x](https://github.com/Sensirion/embedded-i2c-sen5x) |
 | SEN66 | Multi Sensor Environmental Nodes | I2C | [embedded-i2c-sen66](https://github.com/Sensirion/embedded-i2c-sen66) |
-| SFA3X | Formaldehyde | I2C | [embedded-sfa3x](https://github.com/Sensirion/embedded-sfa3x) |
+| SFA3X | Formaldehyde | I2C | [embedded-i2c-sfa3x](https://github.com/Sensirion/embedded-i2c-sfa3x) |
+| SFA3X | Formaldehyde | UART | [embedded-sfa3x](https://github.com/Sensirion/embedded-sfa3x) |
 | SFM | Gas Flow Meter | I2C | [embedded-sfm](https://github.com/Sensirion/embedded-sfm) |
 | SFM3003 | Gas Flow Meter | I2C | [embedded-i2c-sfm-sf06](https://github.com/Sensirion/embedded-i2c-sfm-sf06) |
 | SFM3012 | Gas Flow Meter | I2C | [embedded-i2c-sfm-sf06](https://github.com/Sensirion/embedded-i2c-sfm-sf06) |
@@ -251,6 +252,7 @@ a [SensorBridge](https://sensirion.com/sensorbridge)
 | SCD30 | Carbon Dioxide (CO2) | I2C | [python-i2c-scd30](https://github.com/Sensirion/python-i2c-scd30) |
 | SCD4x | Carbon Dioxide (CO2) | I2C | [python-i2c-scd](https://github.com/Sensirion/python-i2c-scd) |
 | SDP | Differential Pressure | I2C | [python-i2c-sdp](https://github.com/Sensirion/python-i2c-sdp) |
+| SFA3X | Formaldehyde | I2C | [python-i2c-sfa3x](https://github.com/Sensirion/python-i2c-sfa3x) |
 | SFA3X | Formaldehyde | UART | [python-shdlc-sfa3x](https://github.com/Sensirion/python-shdlc-sfa3x) |
 | SFC5XXX | Mass Flow Controller for Gasses | UART | [python-shdlc-sfc5xxx](https://github.com/Sensirion/python-shdlc-sfc5xxx) |
 | SFC6000 | Mass Flow Controller | UART | [python-uart-sfx6xxx](https://github.com/Sensirion/python-uart-sfx6xxx) |
