@@ -403,6 +403,10 @@ of the Linux kernel). The following drivers are available:
 - Crate: <https://crates.io/crates/sgp30>
 - Source code: <https://github.com/dbrgn/sgp30-rs>
 
+#### SFC6XXX UART
+- Crate: <https://crates.io/crates/sfc6xxx-rs>
+- Source code: <https://github.com/EggShark/sfc-rs>
+
 ### Node packages
 
 #### Sensirion HDLC
