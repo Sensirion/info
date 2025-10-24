@@ -108,6 +108,7 @@ full-scale Operating Systems.
 | SFM3019 | Gas Flow Meter | I2C | [embedded-i2c-sfm-sf06](https://github.com/Sensirion/embedded-i2c-sfm-sf06) |
 | SFM3119 | Gas Flow Meter | I2C | [embedded-i2c-sfm-sf06](https://github.com/Sensirion/embedded-i2c-sfm-sf06) |
 | SFM4300 | Gas Flow Meter | I2C | [embedded-i2c-sfm-sf06](https://github.com/Sensirion/embedded-i2c-sfm-sf06) |
+| SFM3505 | Gas Flow Meter | I2C | [embedded-i2c-sfm3505](https://github.com/Sensirion/embedded-i2c-sfm3505) |
 | SGP | Metal-Oxide (MOX) Gas | I2C | [embedded-sgp](https://github.com/Sensirion/embedded-sgp) |
 | SGP40 | Metal-Oxide (MOX) Gas | I2C | [embedded-i2c-sgp40](https://github.com/Sensirion/embedded-i2c-sgp40) |
 | SGP41 | Metal-Oxide (MOX) Gas | I2C | [embedded-i2c-sgp41](https://github.com/Sensirion/embedded-i2c-sgp41) |
@@ -210,6 +211,7 @@ The code can be found in the following repositories:
 | SFM3019 | Gas Flow Meter | I2C | [arduino-i2c-sfm-sf06](https://github.com/Sensirion/arduino-i2c-sfm-sf06) |
 | SFM3119 | Gas Flow Meter | I2C | [arduino-i2c-sfm-sf06](https://github.com/Sensirion/arduino-i2c-sfm-sf06) |
 | SFM4300 | Gas Flow Meter | I2C | [arduino-i2c-sfm-sf06](https://github.com/Sensirion/arduino-i2c-sfm-sf06) |
+| SFM3505 | Gas Flow Meter | I2C | [arduino-i2c-sfm-sfm3505](https://github.com/Sensirion/arduino-i2c-sfm3505) |
 | SFM6000 | Gas Flow Meter | UART | [arduino-uart-sfx6xxx](https://github.com/Sensirion/arduino-uart-sfx6xxx) |
 | SFC6000 | Mass Flow Controller | UART | [arduino-uart-sfx6xxx](https://github.com/Sensirion/arduino-uart-sfx6xxx) |
 | SGP40 | Metal-Oxide (MOX) Gas | I2C | [arduino-i2c-sgp40](https://github.com/Sensirion/arduino-i2c-sgp40) |
@@ -265,6 +267,7 @@ a [SensorBridge](https://sensirion.com/sensorbridge)
 | SFM3019 | Gas Flow Meter | I2C | [python-i2c-sfm-sf06](https://github.com/Sensirion/python-i2c-sfm-sf06) |
 | SFM3119 | Gas Flow Meter | I2C | [python-i2c-sfm-sf06](https://github.com/Sensirion/python-i2c-sfm-sf06) |
 | SFM4300 | Gas Flow Meter | I2C | [python-i2c-sfm-sf06](https://github.com/Sensirion/python-i2c-sfm-sf06) |
+| SFM3505 | Gas Flow Meter | I2C | [python-i2c-sfm3505](https://github.com/Sensirion/python-i2c-sfm3505) |
 | SFM6000 | Gas Flow Meter | UART | [python-uart-sfx6xxx](https://github.com/Sensirion/python-uart-sfx6xxx) |
 | SGP4X | Metal-Oxide (MOX) Gas | I2C | [python-i2c-sgp4x](https://github.com/Sensirion/python-i2c-sgp4x) |
 | SHT3x | Humidity and Temperature | I2C | [python-i2c-sht3x](https://github.com/Sensirion/python-i2c-sht3x) |
@@ -315,6 +318,7 @@ by reading [this section](#example-use).
 | SFM3019 | Gas Flow Meter | I2C | [raspberry-pi-i2c-sfm-sf06](https://github.com/Sensirion/raspberry-pi-i2c-sfm-sf06) |
 | SFM3119 | Gas Flow Meter | I2C | [raspberry-pi-i2c-sfm-sf06](https://github.com/Sensirion/raspberry-pi-i2c-sfm-sf06) |
 | SFM4300 | Gas Flow Meter | I2C | [raspberry-pi-i2c-sfm-sf06](https://github.com/Sensirion/raspberry-pi-i2c-sfm-sf06) |
+| SFM3505 | Gas Flow Meter | I2C | [raspberry-pi-i2c-sfm3505](https://github.com/Sensirion/raspberry-pi-i2c-sfm3505) |
 | SFM6000 | Gas Flow Meter | UART | [raspberry-pi-uart-sfx6xxx](https://github.com/Sensirion/raspberry-pi-uart-sfx6xxx) |
 | SFC6000 | Mass Flow Controller | UART | [raspberry-pi-uart-sfx6xxx](https://github.com/Sensirion/raspberry-pi-uart-sfx6xxx) |
 
